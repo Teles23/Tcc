@@ -1,31 +1,117 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
 }
-body{
-    background-color: black;
+body {
+  background-color: black;
+}
+
+section {
+  border-bottom: 8px solid #222;
+  padding: 70px 45px;
+  margin-bottom: 0;
+  color: #fff;
 }
 .carousel-item {
-    height: 500px;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-.carousel-caption h5,p{
-    color: #fff;
+  height: 500px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-.card-body p{
-    color: black;
+.content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
-#slide-1{
-    background-image: url(../img/slide-1.jpg);
+.text {
+  padding: 0 3rem 0 0;
+  width: 52%;
 }
-#slide-2{
-    background-image: url(../img/slide-2.jpg);
+.text h1 {
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  font-size: 3.125rem;
 }
-#slide-3{
-    background-image: url(../img/slide-1.png);
+
+.text h2 {
+  margin: 0.75em 0 0.25em;
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+.reverse {
+  flex-flow: row-reverse;
+}
+.reverse .text {
+  padding: 0 0 0 3rem;
+}
+.card-img {
+  width: 48%;
+  margin: 0 -3% 0 0;
+}
+
+.reverse .card-img {
+  width: 48%;
+  margin: 0 0 0 -3%;
+}
+.card-img img {
+  max-width: 100%;
+}
+
+.card-body p {
+  color: black;
+}
+.card-title{
+  color: #222;
+}
+#slide-1 {
+  background-image: url(../img/slide-1.jpg);
+}
+#slide-2 {
+  background-image: url(../img/slide-2.jpg);
+}
+#slide-3 {
+  background-image: url(../img/slide-1.png);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 20px 2%;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .text {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .reverse .text {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .card-img {
+    margin-top: 1em;
+    max-width: 600px;
+    width: 100%;
+  }
+  .reverse .card-img {
+    margin-top: 1em;
+    max-width: 600px;
+    width: 100%;
+  }
 }
