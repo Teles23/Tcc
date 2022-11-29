@@ -9,16 +9,13 @@ body {
   background-color: black;
 }
 
-//Cor da barra de menus verde e azul
-cor-muda {
-  background-color: #000001;
-  transition: 2s;
+#background {
+    transition: background 1s;
 }
 
 
-
 section {
-  border-bottom: 8px solid #222;
+  border-bottom: 8px solid rgb(20, 20, 20);
   padding: 70px 45px;
   margin-bottom: 0;
   color: #fff;
@@ -81,13 +78,13 @@ section {
   color: #222;
 }
 #slide-1 {
-  background-image: url(../img/slide-1.jpg);
+  background-image: url(../img/slide-home/fundo-01.png);
 }
 #slide-2 {
-  background-image: url(../img/slide-2.jpg);
+  background-image: url(../img/slide-home/fundo-01.png);
 }
 #slide-3 {
-  background-image: url(../img/slide-1.png);
+  background-image: url(../img/slide-home/fundo-01.png);
 }
 
 

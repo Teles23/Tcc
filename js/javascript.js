@@ -1,9 +1,25 @@
-window.setInterval(function(){
+const background = document.getElementById("background");
 
-    var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
-    
-    $('cor-muda').css({
-      'background-color' : randomColor,
-    });
-  
-  }, 2000);
+const getRandomNumber = (limit) => {
+  return Math.floor(Math.random() * limit);
+};
+
+const getRandomColor = () => {
+  const h = getRandomNumber(360);
+  const s = getRandomNumber(100);
+  const l = getRandomNumber(100);
+
+  return `hsl(${h}deg, ${s}%, ${l}%)`;
+};
+
+const setBackgroundColor = () => {
+  const randomColor = getRandomColor();
+  background.style.backgroundColor = randomColor;
+  background.style.color = randomColor;
+};
+
+setBackgroundColor();
+
+setInterval(() => {
+  setBackgroundColor();
+}, 1500);
