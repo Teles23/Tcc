@@ -10,19 +10,20 @@ body {
 }
 
 //Cor da barra de menus verde e azul
-@-webkit-keyframes blackWhite {  
-  0% { background-color: #5BBE16; }
-  50% { background-color: #52DCBC; }
-  100% { background-color: #5BBE16; }
+cor-muda {
+  background-color: #000001;
+  transition: 2s;
 }
 
-.blinkdiv {
-  height: 100px;
-  background-color: black;
-  -webkit-animation-name: blackWhite;  
-  -webkit-animation-iteration-count: infinite;  
-  -webkit-animation-duration: 2s; 
-}   
+window.setInterval(function(){
+
+  var randomColor = '#'+ ('000000' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+  
+  $('cor-muda').css({
+    'background-color' : randomColor,
+  });
+
+}, 2000);
 
 
 section {
