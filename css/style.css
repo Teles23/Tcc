@@ -9,6 +9,22 @@ body {
   background-color: black;
 }
 
+//Cor da barra de menus verde e azul
+@-webkit-keyframes blackWhite {  
+  0% { background-color: #5BBE16; }
+  50% { background-color: #52DCBC; }
+  100% { background-color: #5BBE16; }
+}
+
+.blinkdiv {
+  height: 100px;
+  background-color: black;
+  -webkit-animation-name: blackWhite;  
+  -webkit-animation-iteration-count: infinite;  
+  -webkit-animation-duration: 2s; 
+}   
+
+
 section {
   border-bottom: 8px solid #222;
   padding: 70px 45px;
