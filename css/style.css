@@ -9,14 +9,20 @@ body {
   background-color: black;
 }
 
+#background {
+    transition: background 3s;
+}
+
+
 section {
-  border-bottom: 8px solid #222;
+  border-bottom: 8px solid rgb(20, 20, 20);
   padding: 70px 45px;
   margin-bottom: 0;
   color: #fff;
 }
 .carousel-item {
   height: 500px;
+  width: 100%;
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -73,13 +79,16 @@ section {
   color: #222;
 }
 #slide-1 {
-  background-image: url(../img/slide-1.jpg);
+  background-size: cover;
+  background-image: url(../img/slide-home/fundo-01.png);
 }
 #slide-2 {
-  background-image: url(../img/slide-2.jpg);
+  background-size: cover;
+  background-image: url(../img/slide-home/fundo-01.png);
 }
 #slide-3 {
-  background-image: url(../img/slide-1.png);
+  background-size: cover;
+  background-image: url(../img/slide-home/fundo-01.png);
 }
 
 
