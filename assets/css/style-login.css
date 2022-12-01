@@ -21,6 +21,9 @@ body {
   display: flex;
   justify-content: center;
 }
+.password{
+  padding-left: 1.6rem !important;
+}
 
 input[type="email"]:not(:placeholder-shown):invalid {
   color: red;

@@ -20,12 +20,12 @@ $stmt->execute();
 if($stmt->rowCount()== 1){
 	$info = $stmt->fetch();
 	/*var_dump($info) exit();*/
-   $_SESSION['logado']=true;
-   $_SESSION['id']=$info['id'];
-   $_SESSION['nome']=$info['nome'];
-   // $_SESSION['login']=$info['login'];
-   $_SESSION['senha']=$info['senha'];
-   header("Location: ../login-index.html");
+   // $_SESSION['logado']=true;
+   // $_SESSION['id']=$info['id'];
+   // $_SESSION['nome']=$info['nome'];
+   // // $_SESSION['login']=$info['login'];
+   // $_SESSION['senha']=$info['senha'];
+   header("Location: ../pages/perfil.html");
 }else{
 	echo "usuário não cadastrado";
 }

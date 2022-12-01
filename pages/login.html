@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-palco</title>
-    <link rel="icon" href="./assets/img/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style-login.css">
+    <title>Login</title>
 </head>
 
 <body>
-    <main>
+    <main class="form-login">
         <header>
             <nav class="navbar navbar-dark fixed-top" id="background">
                 <div class="container-fluid">
@@ -21,11 +26,12 @@
                         data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <img src="./assets/img/nome.png" alt="Bootstrap" id="logo">
+                    <a href="../index.html" target="_self"> <img src="../assets/img/nome.png" alt="" width="80px"
+                            height="40px"></a>
                     <form class="justify-content-start">
-                        <a href="./pages/login.html" target="_self"> <button class="btn btn-sm btn-outline-secondary"
+                        <a href="./login.html" target="_self"> <button class="btn btn-sm btn-outline-secondary"
                                 type="button">Login</button></a>
-                        <a href="./pages/cadastro.html" target="_self" rel="noopener noreferrer"><button
+                        <a href="./cadastro.html" target="_self" rel="noopener noreferrer"><button
                                 class="btn btn-sm btn-outline-secondary" type="button">Cadastre-se</button></a>
                     </form>
                     <div class="offcanvas offcanvas-start  text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
@@ -61,57 +67,39 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </nav>
         </header>
-        <section id="bg-index">
-            <div id="carouselExample " class="carousel carousel slide " data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" id="slide-1" data-bs-interval="15000">
-                    </div>
-                    <div class="carousel-item" id="slide-2" data-bs-interval="15000">
-                    </div>
-                    <div class="carousel-item" id="slide-3" data-bs-interval="15000">
-                    </div>
-                </div>
-            </div>
-        </section>
         <section>
-            <div class="content">
-                <div class="text">
-                    <h1>Titulo Principal</h1>
-                    <h2>Lorem, ipsum dolor sit amet consectetur </h2>
+            <form action="../admin/logar.php" method="POST">
+                <div class="logo-img">
+                    <img class="mb-4 " src="../assets/img/logo.png" alt="" width="70" height="70">
                 </div>
-                <div class="card-img">
-                    <img src="./assets/img/cantor1.jpg" alt="">
+                <h3 class="h3">Entrar</h3>
+                <div class="mb-3 form-floating">
+                    <input type="text" class="form-control" name="email" placeholder="Login">
+                    <label for="formGroupExampleInput" class="form-label">Email</label>
                 </div>
-        </section>
-        <section>
-            <div class="content reverse">
-                <div class="text">
-                    <h1>Titulo Principal</h1>
-                    <h2>Lorem, ipsum dolor sit amet consectetur </h2>
+                <div class="mb-3 form-floating">
+                    <input type="password" class="form-control mb-5" name="senha" placeholder="Senha">
+                    <label for="formGroupExampleInput2" class="form-label">Senha</label>
                 </div>
-                <div class="card-img">
-                    <img src="./assets/img/cantor1.jpg" alt="">
+                <div class="col-12 " style="display:grid;margin-bottom:5px">
+                    <button type="submit" class="btn btn-primary">Entrar</button>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="content">
-                <div class="text">
-                    <h1>Titulo Principal</h1>
-                    <h2>Lorem, ipsum dolor sit amet consectetur </h2>
-                </div>
-                <div class="card-img">
-                    <img src="./assets/img/cantor1.jpg" alt="">
-                </div>
+            </form>
+            <div id="passwordHelpBlock" class="form-text mb-3">
+                Ainda não faz parte da nossa plataforma? <a href="./cadastro.html " target="_self"> Cadastre-se
+                    aqui!</a>
             </div>
         </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <script src="./assets/js/javascript.js"></script>
+    <script src="../assets/js/funcoes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+
+        </script>
+    <script src="../assets/js/javascript.js"></script>
 </body>
 
 </html>

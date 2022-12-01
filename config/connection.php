@@ -2,8 +2,8 @@
 
 $host ="localhost";
 $user ="root";
-$password = "teles97";
-$dbname = "epalco";
+$password = "";
+$dbname = "";
 
 try{
 

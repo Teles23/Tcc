@@ -90,6 +90,13 @@ section {
   background-size: cover;
   background-image: url(../img/slide-home/fundo-01.png);
 }
+#logo{
+  width: 80px; 
+  height:40px;
+}
+#bgindex{
+  padding: 0;
+}
 
 
 
@@ -115,12 +122,23 @@ section {
   }
   .card-img {
     margin-top: 1em;
-    max-width: 600px;
+    max-width: 73%;
     width: 100%;
   }
   .reverse .card-img {
     margin-top: 1em;
-    max-width: 600px;
+    max-width: 73%;
     width: 100%;
+  }
+  .text h1 {
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    font-size: 1.625rem;
+  }
+  
+  .text h2 {
+    margin: 0.75em 0 0.25em;
+    font-size: 1.125rem;
+    font-weight: 400;
   }
 }

@@ -18,7 +18,7 @@ $stmt->bindParam(':confirmesenha',$confirmesenha);
 //executar
 $stmt->execute();
 
-header("Location:../cadastro.html");
+header("Location:../pages/login.html");
 
 // echo "$nome - $ - $senha";
 ?>
