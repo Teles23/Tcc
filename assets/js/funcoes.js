@@ -23,3 +23,20 @@ function verificaCampos() {
         }
         else botao.disabled = true;
 }
+function mostrarsenha(){
+    var tipo = document.getElementById("senha");
+    var tipo1 = document.getElementById("confirmesenha");
+    if(tipo.type == "password"){
+        tipo.type ="text";
+    }else{
+        tipo.type="password"
+    }
+}
+function mostrarsenha1(){
+    var tipo = document.getElementById("confirmesenha");
+    if(tipo.type == "password"){
+        tipo.type ="text";
+    }else{
+        tipo.type="password"
+    }
+}

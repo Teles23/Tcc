@@ -24,8 +24,15 @@ body {
 .password{
   padding-left: 1.6rem !important;
 }
+#mostrar{
+  position:absolute;
+  top: 1.4em;
+  right: 2em;
+  cursor: pointer;
+}
 
 input[type="email"]:not(:placeholder-shown):invalid {
   color: red;
   outline-color: red;
 }
+
