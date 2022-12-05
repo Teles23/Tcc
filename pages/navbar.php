@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-palco</title>
-    <link rel="icon" href="./assets/img/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-
-<body>
-    <main>
-        <header>
+<header>
             <nav class="navbar navbar-dark fixed-top" id="background">
                 <div class="container-fluid">
                     <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
@@ -63,55 +47,3 @@
                 </div>
             </nav>
         </header>
-        <section id="bg-index">
-            <div id="carouselExample " class="carousel carousel slide " data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" id="slide-1" data-bs-interval="15000">
-                    </div>
-                    <div class="carousel-item" id="slide-2" data-bs-interval="15000">
-                    </div>
-                    <div class="carousel-item" id="slide-3" data-bs-interval="15000">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="content">
-                <div class="text">
-                    <h1>Este é o seu espaço!</h1>
-                    <h2>Conte com o e-Palco para encontrar o seu lugar nos palcos da vida </h2>
-                </div>
-                <div class="card-img">
-                    <img src="./assets/img/cantor1.jpg" alt="">
-                </div>
-        </section>
-        <section>
-            <div class="content reverse">
-                <div class="text">
-                    <h1>Nosso setlisto é como música para o seu negócio!</h1>
-                    <h2>Lorem, ipsum dolor sit amet consectetur </h2>
-                </div>
-                <div class="card-img">
-                    <img src="./assets/img/cantor1.jpg" alt="">
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="content">
-                <div class="text">
-                    <h1>De mãos dadas com todos!</h1>
-                    <h2>O e-Palco junta o melhor dos dois mundos e com a gente, você vai fazer um bom negócio.</h2>
-                </div>
-                <div class="card-img">
-                    <img src="./assets/img/cantor1.jpg" alt="">
-                </div>
-            </div>
-        </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <script src="./assets/js/javascript.js"></script>
-</body>
-
-</html>
