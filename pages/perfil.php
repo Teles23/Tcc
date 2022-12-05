@@ -3,16 +3,22 @@ require_once "header.php";
  ?>
 <title>Meu Perfil</title>
 </head>
+<?php
+require_once "navbar.php";
+ ?>
 
 <body>
-    <div class="container text-center">
-        <div class="row col-4">
-            <div class="col">
+    <div class="row text-center justify-content-evenly">
+        <div class="col-4"> 
+            <div class="col-4 barra-perfil">
             Perfil
             </div>
-            <div class="col col-8">
+            
+            <div class="col-8 barra-perfil">
             Dados de Perfil
             </div>
+        </div>
+    </div>
 
 
     

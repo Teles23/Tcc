@@ -5,12 +5,10 @@
                         data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <img src="./assets/img/nome.png" alt="Bootstrap" id="logo">
+                    <img src="/assets/img/nome.png" alt="e-Palco" class="logo-img">
                     <form class="justify-content-start">
-                        <a href="./pages/login.html" target="_self"> <button class="btn btn-sm btn-outline-secondary"
-                                type="button">Login</button></a>
-                        <a href="./pages/cadastro.html" target="_self" rel="noopener noreferrer"><button
-                                class="btn btn-sm btn-outline-secondary" type="button">Cadastre-se</button></a>
+                        <a href="../pages/cadastro.html" target="_self" rel="noopener noreferrer"><button
+                                class="btn btn-sm btn-outline-secondary" type="button">Sair</button></a>
                     </form>
                     <div class="offcanvas offcanvas-start  text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
                         aria-labelledby="offcanvasDarkNavbarLabel">
