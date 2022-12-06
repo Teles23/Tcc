@@ -25,18 +25,15 @@ function verificaCampos() {
 }
 function mostrarsenha(){
     var tipo = document.getElementById("senha");
-    var tipo1 = document.getElementById("confirmesenha");
     if(tipo.type == "password"){
         tipo.type ="text";
     }else{
         tipo.type="password"
     }
-}
-function mostrarsenha1(){
-    var tipo = document.getElementById("confirmesenha");
-    if(tipo.type == "password"){
-        tipo.type ="text";
+    var tipo1 = document.getElementById("confirmesenha");
+    if(tipo1.type == "password"){
+        tipo1.type ="text";
     }else{
-        tipo.type="password"
+        tipo1.type="password"
     }
 }

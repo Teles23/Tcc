@@ -25,9 +25,6 @@ body {
   padding-left: 1.6rem !important;
 }
 #mostrar{
-  position:absolute;
-  top: 1.4em;
-  right: 2em;
   cursor: pointer;
 }
 
