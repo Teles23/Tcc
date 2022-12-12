@@ -25,19 +25,7 @@ if($stmt->rowCount()== 1){
    // $_SESSION['nome']=$info['nome'];
    // // $_SESSION['login']=$info['login'];
    // $_SESSION['senha']=$info['senha'];
-   header("Location: ../pages/perfil.html");
+   header("Location: ../pages/perfil.php");
 }else{
 	echo "usuário não cadastrado";
 }
-
-?>
-
-
-
-
-
-
-
-
-
-

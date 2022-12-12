@@ -20,7 +20,6 @@ $stmt->bindParam(':perfil',$perfil);
 //executar
 $stmt->execute();
 
-header("Location:../pages/login.html");
+header("Location:../pages/login.php");
 
 // echo "$nome - $ - $senha";
-?>
