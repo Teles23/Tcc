@@ -4,6 +4,7 @@ html {
   padding: 0;
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 body {
   background-color: black;
@@ -95,35 +96,39 @@ input[type="email"]:not(:placeholder-shown):invalid {
 .password {
   padding-left: 1.6rem !important;
 }
-.perfil-content {
-  height: 100vh;
-  display: grid;
-  align-content: center;
-  grid-template-columns: minmax(0,5fr) minmax(0,12fr);
-  justify-items: center;
-  max-width: max-content;
-  margin:auto
-
-}
-.perfil-identificacao {
-  border-radius: 6px;
-  background-color: white;
-  width: 225px;
-  height: 460px;
-}
-.perfil-musico {
-  background-color: white;
-  width: 855px;
-  height: auto;
-  border-radius: 6px;
-}
 .foto-usuario {
   border: 1px solid;
   border-radius: 50%;
+  padding: 10px;
 }
-.perfil-foto {
-  text-align: center;
-  margin-top: 5%;
+.perfil-content {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+  gap: 25px;
+}
+.perfil-identificacao {
+  display: flex;
+  background-color: #c0c0c0;
+  width: 225px;
+  height: 572px;
+  border: 0;
+  border-radius: 8px;
+  justify-content: center;
+  padding: 10px 25px;
+}
+
+.destaques {
+  width: 800px;
+  height: auto;
+  display: flex;
+  background-color:#c0c0c0;
+  padding: 10px 25px;
+  border: 0;
+  border-radius: 8px;
+  
 }
 #slide-1 {
   background-size: cover;
@@ -192,4 +197,41 @@ input[type="email"]:not(:placeholder-shown):invalid {
     font-size: 1.125rem;
     font-weight: 400;
   }
+  .foto-usuario {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.perfil-content {
+    display: grid;
+    height: 100vh;
+    align-items: center;
+    row-gap: 34px;
+    margin-top: 84px;
+    grid-template-columns: auto;
+    place-content: start;
+
+}
+
+.perfil-identificacao {
+    display: flex;
+    background-color: #c0c0c0;
+    width: auto;
+    height: auto;
+    border: 0;
+    border-radius: 8px;
+    justify-content: center;
+    padding: 10px 25px;
+}
+.destaques {
+  width: auto;
+  height: auto;
+  display: flex;
+  background-color:#c0c0c0;
+  padding: 10px 25px;
+  border: 0;
+  border-radius: 8px;
+  
+}
 }

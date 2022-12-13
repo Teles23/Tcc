@@ -11,24 +11,88 @@ include_once "../pages/header.php"
     <div class="perfil-content">
         <div class="perfil-identificacao">
             <div class="perfil-foto">
-                    <a href="">
-                        <img src="" alt="" width="64" height="64" class="foto-usuario">
-                    </a>
+                <a href="">
+                    <img src="" alt="" width="150" height="150" class="foto-usuario">
+                </a>
             </div>
         </div>
-        <main class="perfil-musico">
+        <main>
             <div class="destaques">
-                <span></span><span></span><span></span>
+                <fieldset>
+                    <legend> Informações pessoais</legend>
+                    <form action="" method="post">
+                        <div class="row g-2">
+                            <div class="form-floating ">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Nome">
+                                <label for="floatingInput">Nome Completo</label>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-floating ">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="Usuario">
+                                    <label for="floatingInput">Nome de Usuário</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-floating ">
+                                    <input type="date" class="form-control" id="floatingInput">
+                                    <label for="floatingInput"></label>
+                                </div>
+                            </div>
+                            <div class="form-floating ">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                                <label for="floatingInput">E-mail</label>
+                            </div>
+                            <div class="form-floating ">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                                <label for="floatingInput">Repita o E-mail</label>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-floating">
+                                    <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="form-control" id="txtCep" name="txtCep" placeholder="Cep">
+                                    <label for="txtCep">CEP</label>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="txtRua" name="rua" placeholder="Endereco">
+                                    <label for="txtRua">Rua</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-md-2">
+                                <div class="form-floating mb-2">
+                                    <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="form-control" id="floatingInput" placeholder="Nº">
+                                    <label for="floatingInput">Nº</label>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="txtBairro" name="bairro" placeholder="Bairro">
+                                    <label for="txtBairro">Bairro</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-md">
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="txtCidade" name="cidade" placeholder="Cidade">
+                                    <label for="txtCidade">Cidade</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="txtEstado" name="estado" placeholder="Estado">
+                                    <label for="txtEstado">Estado</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 " style="text-align: right;">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                </fieldset>
             </div>
-            <div class="perfil-descricao"></div>
-            <div class="perfil-botoes">
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
-            </div>
-
         </main>
     </div>
 
