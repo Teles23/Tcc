@@ -5,12 +5,12 @@ include_once "../pages/header.php";
 </head>
 
 <body>
-    <main class="pagformulario">
+    <main class="pagformulario flex-container">
         <?php
         include_once "../pages/navbar.php";
         ?>
         <article class="form-login">
-            <div class="logo-img">
+            <div class="flex-container">
                 <img class="mb-4 " src="../assets/img/logo.png" alt="" width="70" height="70">
             </div>
             <div>

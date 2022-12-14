@@ -1,237 +1,240 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 html {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	font-family: "Roboto", sans-serif;
+	box-sizing: border-box;
 }
 body {
-  background-color: black;
-  height: 100vh;
+	background-color: black;
+	height: 100vh;
 }
 section {
-  border-bottom: 8px solid rgb(20, 20, 20);
-  padding: 70px 45px;
-  margin-bottom: 0;
-  color: #fff;
+	border-bottom: 8px solid rgb(20, 20, 20);
+	padding: 70px 45px;
+	margin-bottom: 0;
+	color: #fff;
 }
 input[type="email"]:not(:placeholder-shown):invalid {
-  color: red;
-  outline-color: red;
+	color: red;
+	outline-color: red;
+}
+.flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.nav-perfil {
+	width: 64px;
+	justify-content: end;
+}
+.navbar-collapse {
+	flex-grow: 0;
 }
 .pagformulario {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background: url(../img/bg.jpg) round;
-  background-size: contain;
+	height: 100vh;
+	background: url(../img/bg.jpg) round;
+	background-size: contain;
 }
 .carousel-item {
-  height: 500px;
-  width: 100%;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+	height: 500px;
+	width: 100%;
+	background-position: center;
+	background-size: contain;
 }
 .content {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 1100px;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1100px;
 }
 
 .text {
-  padding: 0 3rem 0 0;
-  width: 52%;
+	padding: 0 3rem 0 0;
+	width: 52%;
 }
 .text h1 {
-  line-height: 1.1;
-  margin-bottom: 0.5rem;
-  font-size: 3.125rem;
+	line-height: 1.1;
+	margin-bottom: 0.5rem;
+	font-size: 3.125rem;
 }
 
 .text h2 {
-  margin: 0.75em 0 0.25em;
-  font-size: 1.625rem;
-  font-weight: 400;
+	margin: 0.75em 0 0.25em;
+	font-size: 1.625rem;
+	font-weight: 400;
 }
 .reverse {
-  flex-flow: row-reverse;
+	flex-flow: row-reverse;
 }
 .reverse .text {
-  padding: 0 0 0 3rem;
+	padding: 0 0 0 3rem;
 }
 .card-img {
-  width: 48%;
-  margin: 0 -3% 0 0;
+	width: 48%;
+	margin: 0 -3% 0 0;
 }
 .reverse .card-img {
-  width: 48%;
-  margin: 0 0 0 -3%;
+	width: 48%;
+	margin: 0 0 0 -3%;
 }
 .card-img img {
-  max-width: 100%;
+	max-width: 100%;
 }
 .card-body p {
-  color: black;
+	color: black;
 }
 .card-title {
-  color: #222;
+	color: #222;
 }
 .form-login {
-  width: 100vw;
-  max-width: 60ch;
-  padding: 15px;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 5px;
-}
-.logo-img {
-  display: flex;
-  justify-content: center;
+	width: 100vw;
+	max-width: 60ch;
+	padding: 15px;
+	margin: auto;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 5px;
 }
 .password {
-  padding-left: 1.6rem !important;
+	padding-left: 1.6rem !important;
 }
 .foto-usuario {
-  border: 1px solid;
-  border-radius: 50%;
-  padding: 10px;
+	border: 1px solid;
+	border-radius: 50%;
+	padding: 10px;
 }
 .perfil-content {
-  display: grid;
-  height: 100vh;
-  place-content: center;
-  align-items: center;
-  grid-template-columns: auto auto;
-  gap: 25px;
+	display: grid;
+	height: 100vh;
+	place-content: center;
+	align-items: center;
+	grid-template-columns: auto auto;
+	gap: 72px;
 }
 .perfil-identificacao {
-  display: flex;
-  background-color: #c0c0c0;
-  width: 225px;
-  height: 572px;
-  border: 0;
-  border-radius: 8px;
-  justify-content: center;
-  padding: 10px 25px;
+	flex-direction: column;
+	background-color: #c0c0c0;
+	width: 225px;
+	height: 572px;
+	border: 0;
+	border-radius: 8px;
+	align-content: center;
+	padding: 10px 25px;
+	flex-wrap: wrap;
 }
-
 .destaques {
-  width: 800px;
-  height: auto;
-  display: flex;
-  background-color:#c0c0c0;
-  padding: 10px 25px;
-  border: 0;
-  border-radius: 8px;
-  
+	width: 800px;
+	height: auto;
+	background-color: #c0c0c0;
+	padding: 10px 25px;
+	border: 0;
+	border-radius: 8px;
+}
+.container {
+	max-width: 1128px;
+	margin: 0 auto 0 auto;
+}
+.perfil-nav{
+  border-radius: 50%;
+}
+.navbar-brand{
+  margin-right: 0;
 }
 #slide-1 {
-  background-size: cover;
-  background-image: url(../img/slide-home/fundo-01.png);
+	background-image: url(../img/slide-home/fundo-01.png);
 }
 #slide-2 {
-  background-size: cover;
-  background-image: url(../img/slide-home/fundo-01.png);
+	background-image: url(../img/slide-home/fundo-01.png);
 }
 #slide-3 {
-  background-size: cover;
-  background-image: url(../img/slide-home/fundo-01.png);
+	background-image: url(../img/slide-home/fundo-01.png);
 }
 #logo {
-  width: 80px;
-  height: 40px;
-}
-#bgindex {
-  padding: 0;
-}
-#background {
-  transition: 3s;
+	width: 80px;
+	height: 40px;
 }
 #mostrar {
-  cursor: pointer;
+	cursor: pointer;
 }
-
-@media only screen and (max-width: 600px) {
-  section {
-    padding: 20px 2%;
+@media only screen and (max-width: 800px) {
+	section {
+		padding: 20px 2%;
+	}
+	.carousel {
+		margin-top: 45px;
+	}
+	.carousel-item {
+		max-height: 194.22px;
+	}
+	.nav-mobile {
+		flex-direction: row;
+	}
+	.content {
+		flex-direction: column;
+	}
+	.text {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		width: 100%;
+	}
+	.reverse .text {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		width: 100%;
+	}
+	.card-img {
+		margin-top: 1em;
+		max-width: 73%;
+		width: 100%;
+	}
+	.reverse .card-img {
+		margin-top: 1em;
+		max-width: 73%;
+		width: 100%;
+	}
+	.text h1 {
+		line-height: 1.1;
+		margin-bottom: 0.5rem;
+		font-size: 1.625rem;
+	}
+	.text h2 {
+		margin: 0.75em 0 0.25em;
+		font-size: 1.125rem;
+		font-weight: 400;
+	}
+	.foto-usuario {
+		border: 1px solid;
+		border-radius: 50%;
+		padding: 10px;
+	}
+	.perfil-content {
+		display: grid;
+		height: 100vh;
+		align-items: center;
+		row-gap: 34px;
+		margin-top: 84px;
+		grid-template-columns: auto;
+		place-content: start;
+	}
+	.perfil-identificacao {
+		background-color: #c0c0c0;
+		width: auto;
+		height: auto;
+		border: 0;
+		border-radius: 8px;
+		padding: 10px 25px;
+	}
+	.destaques {
+		width: auto;
+		height: auto;
+		background-color: #c0c0c0;
+		padding: 10px 25px;
+		border: 0;
+		border-radius: 8px;
+	}
+  .navbar-nav .dropdown-menu{
+    position: absolute;
   }
-  .content {
-    flex-direction: column;
-  }
-  .text {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  .reverse .text {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-  }
-  .card-img {
-    margin-top: 1em;
-    max-width: 73%;
-    width: 100%;
-  }
-  .reverse .card-img {
-    margin-top: 1em;
-    max-width: 73%;
-    width: 100%;
-  }
-  .text h1 {
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
-    font-size: 1.625rem;
-  }
-
-  .text h2 {
-    margin: 0.75em 0 0.25em;
-    font-size: 1.125rem;
-    font-weight: 400;
-  }
-  .foto-usuario {
-    border: 1px solid;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-.perfil-content {
-    display: grid;
-    height: 100vh;
-    align-items: center;
-    row-gap: 34px;
-    margin-top: 84px;
-    grid-template-columns: auto;
-    place-content: start;
-
-}
-
-.perfil-identificacao {
-    display: flex;
-    background-color: #c0c0c0;
-    width: auto;
-    height: auto;
-    border: 0;
-    border-radius: 8px;
-    justify-content: center;
-    padding: 10px 25px;
-}
-.destaques {
-  width: auto;
-  height: auto;
-  display: flex;
-  background-color:#c0c0c0;
-  padding: 10px 25px;
-  border: 0;
-  border-radius: 8px;
-  
-}
 }

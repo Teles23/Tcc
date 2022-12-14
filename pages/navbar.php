@@ -1,7 +1,7 @@
 <?php
 ?>
 <header>
-    <nav class="navbar navbar-dark fixed-top" id="background">
+    <nav class="navbar navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
             <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>

@@ -25,32 +25,49 @@ include('../admin/session.php');
         <main>
             <div class="destaques">
                 <fieldset>
-                    <legend> Informações pessoais</legend>
+                    <legend> Informações Profissionais</legend>
                     <form action="" method="post">
                         <div class="row g-2">
                             <div class="form-floating ">
                                 <input type="text" class="form-control" id="floatingInput" placeholder="Nome">
-                                <label for="floatingInput">Nome Completo</label>
+                                <label for="floatingInput">Nome da Empresa</label>
                             </div>
                             <div class="col-md">
                                 <div class="form-floating ">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Usuario">
-                                    <label for="floatingInput">Nome de Usuário</label>
+                                    <input type="tel" class="form-control" id="floatingInput" placeholder="Usuario">
+                                    <label for="floatingInput">CPF/CNPJ</label>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-floating ">
-                                    <input type="date" class="form-control" id="floatingInput" placeholder="Data de nascimento">
-                                    <label for="floatingInput">Data de nascimento</label>
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="Data de nascimento">
+                                    <label for="floatingInput">Tipo</label>
                                 </div>
                             </div>
-                            <div class="form-floating ">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="Email">
-                                <label for="floatingInput">E-mail</label>
+                            <div class="row g-1">
+                                <div class="col-md">
+                                    <div class="form-floating ">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                                        <label for="floatingInput">Categoria</label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-floating ">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Tamanho do Palco</option>
+                                            <option value="1">Pequeno</option>
+                                            <option value="2">Médio</option>
+                                            <option value="3">Grande</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-floating ">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="Email">
-                                <label for="floatingInput">Repita o E-mail</label>
+                            <div class="row-md">
+                            <div class="form">
+                                <textarea name="resumo" class="form-control" placeholder="Resumo"></textarea>
+                
+                            </div>
+
                             </div>
                             <div class="col-md-2">
                                 <div class="form-floating">

@@ -9,7 +9,7 @@ include_once "./pages/header.php";
         <?php
         include_once "./pages/navbar.php";
         ?>
-        <section id="bg-index">
+        <section>
             <div id="carouselExample " class="carousel carousel slide " data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" id="slide-1" data-bs-interval="15000">
@@ -22,7 +22,7 @@ include_once "./pages/header.php";
             </div>
         </section>
         <section>
-            <div class="content">
+            <div class="content flex-container">
                 <div class="text">
                     <h1>Este é o seu espaço!</h1>
                     <h2>Conte com o e-Palco para encontrar o seu lugar nos palcos da vida </h2>
@@ -33,7 +33,7 @@ include_once "./pages/header.php";
             </div>
         </section>
         <section>
-            <div class="content reverse">
+            <div class="content flex-container reverse">
                 <div class="text">
                     <h1>Nosso setlisto é como música para o seu negócio!</h1>
                     <h2>Lorem, ipsum dolor sit amet consectetur </h2>
@@ -44,7 +44,7 @@ include_once "./pages/header.php";
             </div>
         </section>
         <section>
-            <div class="content">
+            <div class="content flex-container">
                 <div class="text">
                     <h1>De mãos dadas com todos!</h1>
                     <h2>O e-Palco junta o melhor dos dois mundos e com a gente, você vai fazer um bom negócio.</h2>
