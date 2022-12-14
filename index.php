@@ -28,14 +28,14 @@ include_once "./pages/header.php";
                     <h2>Conte com o e-Palco para encontrar o seu lugar nos palcos da vida </h2>
                 </div>
                 <div class="card-img">
-                    <img src="./assets/img/cantor1.jpg" alt="">
+                    <img src="./assets/img/artista-01.png" alt="O microfone está aberto para você fazer o show!">
                 </div>
             </div>
         </section>
         <section>
             <div class="content flex-container reverse">
                 <div class="text">
-                    <h1>Nosso setlisto é como música para o seu negócio!</h1>
+                    <h1>Nosso setlist é como música para o seu negócio!</h1>
                     <h2>Lorem, ipsum dolor sit amet consectetur </h2>
                 </div>
                 <div class="card-img">
