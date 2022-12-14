@@ -35,7 +35,7 @@ include_once "./pages/header.php";
         <section>
             <div class="content reverse">
                 <div class="text">
-                    <h1>Nosso setlisto é como música para o seu negócio!</h1>
+                    <h1>Nosso setlist é como música para o seu negócio!</h1>
                     <h2>Lorem, ipsum dolor sit amet consectetur </h2>
                 </div>
                 <div class="card-img">
