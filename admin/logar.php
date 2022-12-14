@@ -22,7 +22,7 @@ if($stmt->rowCount()== 1){
    $_SESSION['logado']=true;
    $_SESSION['id']=$info['id'];
    $_SESSION['nome']=$info['nome'];
-   $_SESSION['login']=$info['login'];
+   // $_SESSION['login']=$info['login'];
    $_SESSION['senha']=$info['senha'];
    header("Location: ../pages/perfil.php");
 }else{

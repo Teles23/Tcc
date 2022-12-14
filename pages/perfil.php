@@ -1,6 +1,6 @@
 <?php
-include_once "../pages/header.php";
 include('../admin/session.php');
+include_once "../pages/header.php";
 ?>
 <title>Perfil</title>
 </head>
