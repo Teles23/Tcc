@@ -38,10 +38,7 @@ input[type="email"]:not(:placeholder-shown):invalid {
 	background-size: contain;
 }
 .carousel-item {
-	height: 500px;
-	width: 100%;
-	background-position: center;
-	background-size: contain;
+	max-height: 133vh;
 }
 .content {
 	justify-content: space-between;
@@ -140,15 +137,6 @@ input[type="email"]:not(:placeholder-shown):invalid {
 .navbar-brand{
   margin-right: 0;
 }
-#slide-1 {
-	background-image: url(../img/slide-home/fundo-01.png);
-}
-#slide-2 {
-	background-image: url(../img/slide-home/fundo-01.png);
-}
-#slide-3 {
-	background-image: url(../img/slide-home/fundo-01.png);
-}
 #logo {
 	width: 80px;
 	height: 40px;
@@ -164,7 +152,7 @@ input[type="email"]:not(:placeholder-shown):invalid {
 		margin-top: 45px;
 	}
 	.carousel-item {
-		max-height: 194.22px;
+		max-height: 84vh;
 	}
 	.nav-mobile {
 		flex-direction: row;

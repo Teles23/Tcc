@@ -9,14 +9,17 @@ include_once "./pages/header.php";
         <?php
         include_once "./pages/navbar.php";
         ?>
-        <section>
+        <section style="padding:0 0 30px;">
             <div id="carouselExample " class="carousel carousel slide " data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" id="slide-1" data-bs-interval="15000">
+                        <img src="./assets/img/slide-home/fundo-01.png" class="w-100 d-block" alt="">
                     </div>
                     <div class="carousel-item" id="slide-2" data-bs-interval="15000">
+                    <img src="./assets/img/slide-2.jpg" class="w-100 d-block" alt="">
                     </div>
                     <div class="carousel-item" id="slide-3" data-bs-interval="15000">
+                    <img src="./assets/img/slide-3.png" class="w-100 d-block" alt="">
                     </div>
                 </div>
             </div>
