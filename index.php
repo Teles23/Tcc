@@ -28,7 +28,7 @@ include_once "./pages/header.php";
             <div class="content flex-container">
                 <div class="text">
                     <h1>Este é o seu espaço!</h1>
-                    <h2>Conte com o e-Palco para encontrar o seu lugar nos palcos da vida </h2>
+                    <h2>Conte com o e-Palco para encontrar o seu lugar nos palcos da vida</h2>
                 </div>
                 <div class="card-img">
                     <img src="./assets/img/artista-01.png" alt="O microfone está aberto para você fazer o show!">
