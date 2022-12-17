@@ -1,5 +1,5 @@
 const campoSenha = document.querySelector('input[name="senha"]');
-const campoConfirmarSenha = document.querySelector('input[name="confirmesenha"]');
+const campoConfirmarSenha = document.querySelector('input[name="confirme_senha"]');
 const botao = document.querySelector('.frm-botao');
 const letras = /[A-Z]/i;
 const numeros = /\d+/;

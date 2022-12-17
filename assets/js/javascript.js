@@ -29,7 +29,7 @@
 function buscaCep() {
   let cep = document.getElementById('txtCep').value;
   if (cep !== "") {
-    let url = "https://brasilapi.com.br/api/cep/v1/"+cep;
+    let url = "https://brasilapi.com.br/api/cep/v1/" + cep;
     let req = new XMLHttpRequest();
     req.open("GET", url);
     req.send();
@@ -53,4 +53,41 @@ function buscaCep() {
 window.onload = function () {
   let txtCep = document.getElementById("txtCep");
   txtCep.addEventListener("blur", buscaCep);
+}
+
+const cadUsuario = document.getElementById("form_cadastro");
+
+if (cadUsuario) {
+  cadUsuario.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const dadosForm = new FormData(cadUsuario);
+
+    const dados = await fetch("../admin/cad_userOk.php", {
+      method: "POST",
+      body: dadosForm
+    });
+
+    const resposta = await dados.json();
+
+    if (resposta['status']) {
+      Swal.fire({
+        text: resposta['msg'],
+        icon: 'success',
+        showCancelButton: false,
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'Fechar'
+      });
+
+    } else {
+      Swal.fire({
+        text: resposta['msg'],
+        icon: 'error',
+        showCancelButton: false,
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'Fechar'
+      });
+    }
+  });
+
+ 
 }
