@@ -29,11 +29,45 @@ include_once "./pages/header.php";
                 <div class="text">
                     <h1>Este é o seu espaço!</h1>
                     <h2>Conte com o e-Palco para encontrar o seu lugar nos palcos da vida</h2>
-                </div>
-                <div class="card-img">
-                    <img src="./assets/img/artista-01.png" alt="O microfone está aberto para você fazer o show!">
-                </div>
+
+                    <!-- Primeiro Modal -->
+                    <!-- Botão para acionar modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+                    Saiba como!
+                    </button>
+
+                    <!-- Modal 1 -->
+                    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="TituloModalCentralizado">Músicos habilidosos, sejam muito bem vindos ao e-Palco!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                            <div class="modal-body">
+                            O mercado para aqueles que decidiram viver da música parece um grande desafio - e é! Além do talento, que é pré-requisito para quem almeja o sucesso, o músico precisa de uma combinação de fatores que está além do seu alcance, e uma delas é a oportunidade.
+
+                            Muitos artistas em começo de carreira tem dificuldades para encontrar um contratante para se apresentarem. E os motivos são vários: os donos de eventos, principalmente de bares e restaurantes, não se interessam inicialmente por músicos e bandas independentes. E quando oferecem uma oportunidade, ela é disputada por dezenas de candidatos. 
+
+                            As oportunidades no ramo de shows e eventos são difíceis de se encontrar. Isso pode desanimar o músico a continuar na carreira. Entretanto, o e-Palco veio para abrir as portas para o seu talento.
+
+                            A nossa plataforma vai disponibilizar para você, profissional da música, uma lista de eventos com a possibilidade de filtrá-las pelo tamanho do público, localização, valor e habilidade musical. Basta você pesquisar, acertar os detalhes, aceitar a proposta e pronto: você já se apresentar e fazer renda.
+
+                            Com o e-Palco, o show vai continuar!
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                
+                                        
             </div>
+            <div class="card-img">
+                <img src="./assets/img/artista-01.png" alt="O microfone está aberto para você fazer o show!">
+            </div>
+        </div>
         </section>
         <section>
             <div class="content flex-container reverse">
