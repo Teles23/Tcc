@@ -29,40 +29,32 @@ include_once "./pages/header.php";
                 <div class="text">
                     <h1>Este é o seu espaço!</h1>
                     <h2>Conte com o e-Palco para encontrar o seu lugar nos palcos da vida</h2>
-
-                    <!-- Primeiro Modal -->
-                    <!-- Botão para acionar modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Saiba como!
                     </button>
 
-                    <!-- Modal 1 -->
-                    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="TituloModalCentralizado">Músicos habilidosos, sejam muito bem vindos ao e-Palco!</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Músicos habilidosos,<br>sejam muitobem-vindos ao e-Palco!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                            <div class="modal-body">
-                            <p>O mercado para aqueles que decidiram viver da música parece um grande desafio - e é! Além do talento, que é pré-requisito para quem almeja o sucesso, o músico precisa de uma combinação de fatores que está além do seu alcance, e uma delas é a oportunidade.</p>
-
-                            <p>Muitos artistas em começo de carreira tem dificuldades para encontrar um contratante para se apresentarem. E os motivos são vários: os donos de eventos, principalmente de bares e restaurantes, não se interessam inicialmente por músicos e bandas independentes. E quando oferecem uma oportunidade, ela é disputada por dezenas de candidatos.</p> 
-
-                            <p>As oportunidades no ramo de shows e eventos são difíceis de se encontrar. Isso pode desanimar o músico a continuar na carreira. Entretanto, o e-Palco veio para abrir as portas para o seu talento.</p>
-
-                            <p>A nossa plataforma vai disponibilizar para você, profissional da música, uma lista de eventos com a possibilidade de filtrá-las pelo tamanho do público, localização, valor e habilidade musical. Basta você pesquisar, acertar os detalhes, aceitar a proposta e pronto: você já se apresentar e fazer renda.</p>
-
-                            <p>Com o e-Palco, o show vai continuar!</p>
-
-                            </div>
+                        <div class="modal-body">
+                                <p>O mercado para aqueles que decidiram viver da música parece um grande desafio - e é! Além do talento, que é pré-requisito para quem almeja o sucesso, o músico precisa de uma combinação de fatores que está além do seu alcance, e uma delas é a oportunidade.</p>
+                                <p>Muitos artistas em começo de carreira tem dificuldades para encontrar um contratante para se apresentarem. E os motivos são vários: os donos de eventos, principalmente de bares e restaurantes, não se interessam inicialmente por músicos e bandas independentes. E quando oferecem uma oportunidade, ela é disputada por dezenas de candidatos.</p> 
+                                <p>As oportunidades no ramo de shows e eventos são difíceis de se encontrar. Isso pode desanimar o músico a continuar na carreira. Entretanto, o e-Palco veio para abrir as portas para o seu talento.</p>
+                                <p>A nossa plataforma vai disponibilizar para você, profissional da música, uma lista de eventos com a possibilidade de filtrá-las pelo tamanho do público, localização, valor e habilidade musical. Basta você pesquisar, acertar os detalhes, aceitar a proposta e pronto: você já se apresentar e fazer renda.</p>
+                                <p>Com o e-Palco, o show vai continuar!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar janela</button>
+                        </div>
                         </div>
                     </div>
-                    </div>
-                
-                                        
+                    </div>           
             </div>
             <div class="card-img">
                 <img src="./assets/img/artista-01.png" alt="O microfone está aberto para você fazer o show!">
@@ -72,8 +64,31 @@ include_once "./pages/header.php";
         <section>
             <div class="content flex-container reverse">
                 <div class="text">
-                    <h1>Fazemos o ritmo que agita<br>o seu negócio!</h1>
-                    <h2>Conte com o e-Palco para montar a sua playlist.</h2>
+                    <h1>Fazemos o ritmo que<br>agita o seu negócio!</h1>
+                    <h2>Conte com o e-Palco para montar a playlist do seu negócio.</h2>
+                    <!-- Modal da Section #2 -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Saiba mais!
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Músicos ansiosos para fazer parte do seu negócio.</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+
                 </div>
                 <div class="card-img">
                     <img src="./assets/img/cont-01.png" alt="">
