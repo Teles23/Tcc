@@ -15,17 +15,20 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
+                            <li><a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house-chimney"></i></a>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="nav-link" href="#"><i class="fa-regular fa-calendar-days"></i></a>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="nav-link" href="#"><i class="fa-solid fa-message"></i></a>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item" href="?sair">Sair</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item flex-container nav-perfil">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house-chimney"></i></a>
-                    </li>
-                    <li class="nav-item flex-container nav-perfil">
-                        <a class="nav-link" href="#"><i class="fa-regular fa-calendar-days"></i></a>
-                    </li>
-                    <li class="nav-item flex-container nav-perfil">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-message"></i></a>
                     </li>
                     <li class="nav-item flex-container nav-perfil">
                         <a class="nav-link position-relative" href="#"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99 <span class="visually-hidden">unread messages</span></span><i class="fa-solid fa-bell"></i></a>

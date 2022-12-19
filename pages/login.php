@@ -30,8 +30,8 @@ include_once "../pages/header.php";
                 </div>
             </form>
             <div id="passwordHelpBlock" class="form-text mb-3">
-                Ainda não faz parte da nossa plataforma? <a href="../pages/cadastro.php " target="_self"> Cadastre-se
-                    aqui!</a>
+                Ainda não faz parte da nossa plataforma? <a href="../pages/cadastro.php " target="_self"> Clique aqui e cadastre-se
+                    agora!</a>
             </div>
         </article>
     </main>

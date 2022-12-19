@@ -2,7 +2,7 @@
 include('../admin/session.php');
 include_once "../pages/header.php";
 ?>
-<title>Perfil</title>
+<title>Perfil do Contratante</title>
 </head>
 
 <body>

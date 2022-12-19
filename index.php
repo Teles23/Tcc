@@ -77,11 +77,18 @@ include_once "./pages/header.php";
                     <div class="modal-dialog modal-dialog-scrollable">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Músicos ansiosos para fazer parte do seu negócio.</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Precisa de boas opções para o seu evento?<br>Olha o que preparamos para você!</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            ...
+                        <p>Se o seu evento precisa de atração musical, já deve ter se deparado com aquela pergunta-chave que todo contratante se faz: “Quem?”. Segundo a Ordem dos Músicos do Brasil, existem cerca de 600 mil profissionais da música ativos no país, isso somente em 2015. e a cada ano esse número tende a crescer.</p> 
+
+                        <p>Se isso não bastasse, o Brasil abriga mais de 25 gêneros musicais próprios, como samba e suas variantes, bossa-nova, choro, axé, forró, piseiro, sertanejo, pagode (e o pagodão baiano), e etc., etc… Junte-se à riqueza de nosso ritmos os inúmeros estilos musicais do mundo todo e ficará cada vez mais difícil encontrar qual é a melhor opção para o seu evento.</p>
+
+                        <p>Há ainda a questão da habilidade musical para se levar em consideração. Existem profissionais da mais variada qualidade musical, desde profissionais mais básicos até mesmo “aquele cara”, em que seus talentos são reconhecidos em segundos.</p> 
+
+                        <p>Portanto, como escolher a melhor opção, ou os melhores profissionais, para fazer o som do seu evento?</p>  
+
                         </div>
                         </div>
                     </div>
