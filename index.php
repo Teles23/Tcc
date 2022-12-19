@@ -47,15 +47,15 @@ include_once "./pages/header.php";
                             </button>
                         </div>
                             <div class="modal-body">
-                            O mercado para aqueles que decidiram viver da música parece um grande desafio - e é! Além do talento, que é pré-requisito para quem almeja o sucesso, o músico precisa de uma combinação de fatores que está além do seu alcance, e uma delas é a oportunidade.
+                            <p>O mercado para aqueles que decidiram viver da música parece um grande desafio - e é! Além do talento, que é pré-requisito para quem almeja o sucesso, o músico precisa de uma combinação de fatores que está além do seu alcance, e uma delas é a oportunidade.</p>
 
-                            Muitos artistas em começo de carreira tem dificuldades para encontrar um contratante para se apresentarem. E os motivos são vários: os donos de eventos, principalmente de bares e restaurantes, não se interessam inicialmente por músicos e bandas independentes. E quando oferecem uma oportunidade, ela é disputada por dezenas de candidatos. 
+                            <p>Muitos artistas em começo de carreira tem dificuldades para encontrar um contratante para se apresentarem. E os motivos são vários: os donos de eventos, principalmente de bares e restaurantes, não se interessam inicialmente por músicos e bandas independentes. E quando oferecem uma oportunidade, ela é disputada por dezenas de candidatos.</p> 
 
-                            As oportunidades no ramo de shows e eventos são difíceis de se encontrar. Isso pode desanimar o músico a continuar na carreira. Entretanto, o e-Palco veio para abrir as portas para o seu talento.
+                            <p>As oportunidades no ramo de shows e eventos são difíceis de se encontrar. Isso pode desanimar o músico a continuar na carreira. Entretanto, o e-Palco veio para abrir as portas para o seu talento.</p>
 
-                            A nossa plataforma vai disponibilizar para você, profissional da música, uma lista de eventos com a possibilidade de filtrá-las pelo tamanho do público, localização, valor e habilidade musical. Basta você pesquisar, acertar os detalhes, aceitar a proposta e pronto: você já se apresentar e fazer renda.
+                            <p>A nossa plataforma vai disponibilizar para você, profissional da música, uma lista de eventos com a possibilidade de filtrá-las pelo tamanho do público, localização, valor e habilidade musical. Basta você pesquisar, acertar os detalhes, aceitar a proposta e pronto: você já se apresentar e fazer renda.</p>
 
-                            Com o e-Palco, o show vai continuar!
+                            <p>Com o e-Palco, o show vai continuar!</p>
 
                             </div>
                         </div>
@@ -72,11 +72,11 @@ include_once "./pages/header.php";
         <section>
             <div class="content flex-container reverse">
                 <div class="text">
-                    <h1>Nosso setlist é como música para o seu negócio!</h1>
-                    <h2>Lorem, ipsum dolor sit amet consectetur </h2>
+                    <h1>Fazemos o ritmo que agita<br>o seu negócio!</h1>
+                    <h2>Conte com o e-Palco para montar a sua playlist.</h2>
                 </div>
                 <div class="card-img">
-                    <img src="./assets/img/cantor1.jpg" alt="">
+                    <img src="./assets/img/cont-01.png" alt="">
                 </div>
             </div>
         </section>
