@@ -30,7 +30,7 @@ function mostrarsenha(){
     }else{
         tipo.type="password"
     }
-    var tipo1 = document.getElementById("confirmesenha");
+    var tipo1 = document.getElementById("confirme_senha");
     if(tipo1.type == "password"){
         tipo1.type ="text";
     }else{
