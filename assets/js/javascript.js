@@ -1,28 +1,17 @@
-// const background = document.getElementById("background");
-
-// const getRandomNumber = (limit) => {
-//   return Math.floor(Math.random() * limit);
-// };
-
-// const getRandomColor = () => {
-//   const h = getRandomNumber(139);
-//   const s = getRandomNumber(50);
-//   const l = getRandomNumber(50);
-
-//   return `hsl(${h}deg, ${s}%, ${l}%)`;
-// };
-
-// const setBackgroundColor = () => {
-//   const randomColor = getRandomColor();
-//   background.style.backgroundColor = randomColor;
-//   background.style.color = randomColor;
-// };
-
-// setBackgroundColor();
-
-// setInterval(() => {
-//   setBackgroundColor();
-// }, 1500);
+function mostrarsenha() {
+  var tipo = document.getElementById("senha");
+  if (tipo.type == "password") {
+    tipo.type = "text";
+  } else {
+    tipo.type = "password"
+  }
+  var tipo1 = document.getElementById("confirme_senha");
+  if (tipo1.type == "password") {
+    tipo1.type = "text";
+  } else {
+    tipo1.type = "password"
+  }
+}
 
 // Buscar cep
 
@@ -70,14 +59,15 @@ if (cadUsuario) {
     const resposta = await dados.json();
 
     if (resposta['status']) {
-      Swal.fire({
-        text: resposta['msg'],
-        icon: 'success',
-        showCancelButton: false,
-        confirmButtonColor: '#3085d6',
-        confirmButtonText: 'Fechar'
-      });
+      window.location.href = "../pages/login.php";
+      // Swal.fire({
+      //   text: resposta['msg'],
+      //   icon: 'success',
+      //   showCancelButton: false,
+      //   confirmButtonColor: '#3085d6',
+      //   confirmButtonText: 'Fechar'
 
+      // });
     } else {
       Swal.fire({
         text: resposta['msg'],
@@ -89,5 +79,35 @@ if (cadUsuario) {
     }
   });
 
- 
+
+}
+const logUsuario = document.getElementById("form_login");
+
+if (logUsuario) {
+  logUsuario.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const dadosForm = new FormData(logUsuario);
+
+    const dados = await fetch("../admin/logar.php", {
+      method: "POST",
+      body: dadosForm
+    });
+
+    const resposta = await dados.json();
+    const resposta1 = dados;
+
+    if (resposta['status'] == false) {
+      Swal.fire({
+        text: resposta['msg'],
+        icon: 'error',
+        showCancelButton: false,
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'Fechar'
+      });
+    } else if (resposta1['status']) {
+      window.location.href = "../pages/perfil.php";
+    }
+  });
+
+
 }

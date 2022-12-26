@@ -20,6 +20,9 @@ input[type="email"]:not(:placeholder-shown):invalid {
 	color: red;
 	outline-color: red;
 }
+.modal-content{
+	color: #222;
+}
 .flex-container {
 	display: flex;
 	align-items: center;

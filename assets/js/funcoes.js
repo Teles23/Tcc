@@ -23,17 +23,4 @@ function verificaCampos() {
         }
         else botao.disabled = true;
 }
-function mostrarsenha(){
-    var tipo = document.getElementById("senha");
-    if(tipo.type == "password"){
-        tipo.type ="text";
-    }else{
-        tipo.type="password"
-    }
-    var tipo1 = document.getElementById("confirme_senha");
-    if(tipo1.type == "password"){
-        tipo1.type ="text";
-    }else{
-        tipo1.type="password"
-    }
-}
+

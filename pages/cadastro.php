@@ -52,7 +52,6 @@ include_once "../pages/header.php";
                     <button type="submit" class="btn frm-botao btn-primary" id="cad-btn" >Cadastrar-se</button>
                 </div>
             </form>
-            </>
         </article>
     </main>
     <script src="../assets/js/funcoes.js"></script>

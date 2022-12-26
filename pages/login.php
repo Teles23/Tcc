@@ -10,17 +10,17 @@ include_once "../pages/header.php";
         include_once "../pages/navbar.php";
         ?>
         <article class="form-login">
-            <form action="../admin/logar.php" method="POST">
+            <form action="../admin/logar.php" method="POST" id="form_login">
                 <div class="flex-container">
                     <img class="mb-4 " src="../assets/img/logo.png" alt="" width="70" height="70">
                 </div>
                 <h3 class="h3">Entrar</h3>
                 <div class="mb-3 form-floating">
-                    <input type="email" class="form-control" name="email" placeholder="Email" required>
+                    <input type="email" class="form-control" name="email" placeholder="Email">
                     <label for="formGroupExampleInput" class="form-label">Email</label>
                 </div>
                 <div class="mb-1 form-floating">
-                    <input type="password" class="form-control mb-5" name="senha" id="senha" placeholder="Senha" minlength="6" required>
+                    <input type="password" class="form-control mb-5" name="senha" id="senha" placeholder="Senha" minlength="6">
 
                     <label for="formGroupExampleInput2" class="form-label">Senha</label>
                 </div>
@@ -38,7 +38,7 @@ include_once "../pages/header.php";
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="../assets/js/javascript.js"></script>
-    <script src="../assets/js/funcoes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
