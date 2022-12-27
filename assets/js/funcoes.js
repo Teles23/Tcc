@@ -21,6 +21,5 @@ function verificaCampos() {
             if (campoSenha.value == campoConfirmarSenha.value) botao.disabled = false;
             else botao.disabled = true;
         }
-        else botao.disabled = true;
+    else botao.disabled = true;
 }
-

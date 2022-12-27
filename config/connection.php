@@ -1,17 +1,16 @@
 <?php
 
-$host ="localhost";
-$user ="root";
+$host = "localhost";
+$user = "root";
 $password = "teles97";
 $dbname = "epalco";
 
-try{
+try {
 
-$conectar = new PDO("mysql:host=".$host."; dbname=".$dbname, $user, $password);
+    $conectar = new PDO("mysql:host=" . $host . "; dbname=" . $dbname, $user, $password);
 
-// echo "conexão Ok";
+    // echo "conexão Ok";
 
-} catch (PDOException $e){
-die( "Erro na conexão" . $e->getMessage());
-
+} catch (PDOException $e) {
+    die("Erro na conexão" . $e->getMessage());
 }

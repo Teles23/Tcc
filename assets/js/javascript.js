@@ -95,6 +95,7 @@ if (logUsuario) {
 
     const resposta = await dados.json();
     const resposta1 = dados;
+    const id = dados;
 
     if (resposta['status'] == false) {
       Swal.fire({
@@ -105,7 +106,7 @@ if (logUsuario) {
         confirmButtonText: 'Fechar'
       });
     } else if (resposta1['status']) {
-      window.location.href = "../pages/perfil.php";
+      window.location.href = "../pages/perfil.php?id=" + resposta['id'];
     }
   });
 

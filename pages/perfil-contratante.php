@@ -40,7 +40,8 @@ include_once "../pages/header.php";
                             </div>
                             <div class="col-md-3">
                                 <div class="form-floating ">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Data de nascimento">
+                                    <input type="text" class="form-control" id="floatingInput"
+                                        placeholder="Data de nascimento">
                                     <label for="floatingInput">Tipo</label>
                                 </div>
                             </div>
@@ -63,21 +64,23 @@ include_once "../pages/header.php";
                                 </div>
                             </div>
                             <div class="row-md">
-                            <div class="form">
-                                <textarea name="resumo" class="form-control" placeholder="Resumo"></textarea>
-                
-                            </div>
+                                <div class="form">
+                                    <textarea name="resumo" class="form-control" placeholder="Resumo"></textarea>
+
+                                </div>
 
                             </div>
                             <div class="col-md-2">
                                 <div class="form-floating">
-                                    <input type="tel" onkeypress="return event.charCode >= 45 && event.charCode <= 57" class="form-control" id="txtCep" name="txtCep" placeholder="Cep">
+                                    <input type="tel" onkeypress="return event.charCode >= 45 && event.charCode <= 57"
+                                        class="form-control" id="txtCep" name="txtCep" placeholder="Cep">
                                     <label for="txtCep">CEP</label>
                                 </div>
                             </div>
                             <div class="col-md">
                                 <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="txtRua" name="rua" placeholder="Endereco">
+                                    <input type="text" class="form-control" id="txtRua" name="rua"
+                                        placeholder="Endereco">
                                     <label for="txtRua">Rua</label>
                                 </div>
                             </div>
@@ -85,13 +88,15 @@ include_once "../pages/header.php";
                         <div class="row g-2">
                             <div class="col-md-2">
                                 <div class="form-floating mb-2">
-                                    <input type="tel" onkeypress="return event.charCode >= 45 && event.charCode <= 59" class="form-control" id="floatingInput" placeholder="Nº">
+                                    <input type="tel" onkeypress="return event.charCode >= 45 && event.charCode <= 59"
+                                        class="form-control" id="floatingInput" placeholder="Nº">
                                     <label for="floatingInput">Nº</label>
                                 </div>
                             </div>
                             <div class="col-md">
                                 <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="txtBairro" name="bairro" placeholder="Bairro">
+                                    <input type="text" class="form-control" id="txtBairro" name="bairro"
+                                        placeholder="Bairro">
                                     <label for="txtBairro">Bairro</label>
                                 </div>
                             </div>
@@ -99,13 +104,15 @@ include_once "../pages/header.php";
                         <div class="row g-2">
                             <div class="col-md">
                                 <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="txtCidade" name="cidade" placeholder="Cidade">
+                                    <input type="text" class="form-control" id="txtCidade" name="cidade"
+                                        placeholder="Cidade">
                                     <label for="txtCidade">Cidade</label>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="txtEstado" name="estado" placeholder="Estado">
+                                    <input type="text" class="form-control" id="txtEstado" name="estado"
+                                        placeholder="Estado">
                                     <label for="txtEstado">Estado</label>
                                 </div>
                             </div>
@@ -118,6 +125,8 @@ include_once "../pages/header.php";
             </div>
         </main>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
     <script src="../assets/js/javascript.js"></script>
 </body>

@@ -10,6 +10,7 @@ if (empty($dados['email'])) {
    $retorna = ['status' => false, 'msg' => "Necessario preencher o campo senha!"];
 } else {
    $senha = md5($_POST['senha']);
+
    $query_usuario = ("SELECT * FROM users WHERE email=:email AND senha=:senha");
    $stmt = $conectar->prepare($query_usuario);
 
@@ -19,7 +20,7 @@ if (empty($dados['email'])) {
    $stmt->execute();
    if ($stmt->rowCount() == 1) {
       $info = $stmt->fetch();
-      $retorna = ['status' => true];
+      $retorna = ['status' => true, 'id' => $_SESSION['id']];
       $_SESSION['logado'] = true;
       $_SESSION['id'] = $info['id'];
       $_SESSION['nome'] = $info['nome'];
