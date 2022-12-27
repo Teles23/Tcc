@@ -15,8 +15,13 @@ if (empty($dados['nome'])) {
 } else {
     $senha = md5($_POST['senha']);
     $confirmesenha = md5($_POST['confirme_senha']);
+    $arquivo = $_FILES["image"];
     //preparar
-    $query_usuario = ("INSERT INTO users (nome, email, senha, confirmesenha, perfil) VALUES(:nome, :email, :senha, :confirmesenha, :perfil)");
+    $query_usuario = ("INSERT INTO users (nome, email, senha, confirmesenha, perfil, image) VALUES(:nome, :email, :senha, :confirmesenha, :perfil,:image)");
+
+    move_uploaded_file($arquivo["tmp_name"], "../uploads/" . $arquivo["name"]);
+    $image = "../uploads/" . $arquivo["name"];
+
     $stmt = $conectar->prepare($query_usuario);
     //tratar
     $stmt->bindParam(':nome', $dados['nome']);
@@ -24,6 +29,7 @@ if (empty($dados['nome'])) {
     $stmt->bindParam(':senha', $senha);
     $stmt->bindParam(':confirmesenha', $confirmesenha);
     $stmt->bindParam(':perfil', $dados['perfil']);
+    $stmt->bindParam(":image", $image);
 
     //executar
     $stmt->execute();

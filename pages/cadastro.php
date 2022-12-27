@@ -26,6 +26,10 @@ include_once "../pages/header.php";
                     <input class="form-check-input" type="radio" name="perfil" id="inlineRadio2" value="Contratante">
                     <label class="form-check-label" for="inlineRadio2">Contratante</label>
                 </div>
+                <div class="mb-3">
+                    <label for="validationDefaultUsername" class="form-label">Image</label>
+                    <input type="file" class="form-control" id="validationDefault02" name="image" required placeholder="envie uma imagem">
+                </div>
                 <div class=" form-floating mb-3 col">
                     <input type="text" class="form-control" placeholder="Nome" name="nome" id="nome" >
                     <label for="exampleInputEmail">Nome</label>
