@@ -109,7 +109,7 @@ input[type="email"]:not(:placeholder-shown):invalid {
 	place-content: center;
 	align-items: center;
 	grid-template-columns: auto auto;
-	gap: 72px;
+	gap: 20px;
 }
 .perfil-identificacao {
 	flex-direction: column;
