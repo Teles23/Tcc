@@ -19,7 +19,7 @@ include_once "../pages/header.php";
             </div>
             <form action="../admin/cad_userOk.php" method="POST" id="form_cadastro">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="perfil" id="inlineRadio1" value="Músico" checked>
+                    <input class="form-check-input" type="radio" name="perfil" id="inlineRadio1" value="Musico" checked>
                     <label class="form-check-label" for="inlineRadio1">Músico</label>
                 </div>
                 <div class="form-check form-check-inline">
