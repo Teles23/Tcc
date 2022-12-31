@@ -1,9 +1,9 @@
 <?php
 
-$host = "sql113.epizy.com";
-$user = "epiz_33282288";
-$password = "6gCpWje8Hp1y";
-$dbname = "epiz_33282288_epalco";
+$host = "localhost";
+$user = "root";
+$password = "teles97";
+$dbname = "epalco";
 
 try {
 
