@@ -2,7 +2,7 @@
 include_once "../pages/header.php";
 
 ?>
-<title>Criar Anúncio</title>
+<title>Editar Anúncio</title>
 </head>
 
 <body>
@@ -19,8 +19,8 @@ include_once "../pages/header.php";
                     <div class="col-9">
 
                         <fieldset>
-                            <legend> Criar Anúncio</legend>
-                            <form action="../admin/envia.php" method="POST" enctype="multipart/form-data">
+                            <legend> Editar Anúncio</legend>
+                            <form action="" method="post">
                                 <div class="row g-2">
                                     <!-- o Campo das Imagens do Anuncio -->
                                     <div class="row align-items-start" id="evento-img">
@@ -30,31 +30,12 @@ include_once "../pages/header.php";
                                     </div>
                                     <!-- Texto do Anuncio -->
                                     <div class="form-floating ">
-                                        <input type="text" class="form-control" id="floatingInput" placeholder="Titulo" name="title">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="Titulo">
                                         <label for="floatingInput">Digite o Título do Evento</label>
                                     </div>
-                                    <div class="col-md-3">
-                                        <div class="form-floating ">
-                                            <input type="date" class="form-control" id="floatingInput" placeholder="Data do Evento">
-                                            <label for="floatingInput">Data do evento</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="form-floating ">
-                                        <input type="time" class="form-control" id="eveHora" name="horario" placeholder="Horário">
-                                            <label for="floatingInput">Horário</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md">
-                                        <div class="form-floating ">
-                                        <input type="text" class="form-control" id="eveCidade" name="cidade" placeholder="Cidade">
-                                            <label for="floatingInput">Local do evento</label>
-                                        </div>
-                                    </div>
-                            </div>
                                     <div class="row-md">
                                         <div class="form">
-                                            <textarea name="texto-evento" class="form-control" id="floatingInput" name="description" placeholder="Digite aqui a descrição do evento"></textarea>
+                                            <textarea name="texto-evento" class="form-control" id="floatingInput" placeholder="Digite aqui a descrição do evento"></textarea>
 
                                         </div>
                                     </div>
