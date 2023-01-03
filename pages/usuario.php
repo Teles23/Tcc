@@ -4,7 +4,7 @@
             foreach ($results as $post) : ?>
             <div class="perfil-foto">
                 <a href="">
-                    <img src="<?= $post["image"] ?>" alt="perfil-foto-mini" width="150" height="150" name="image" class="foto-usuario">
+                    <img src="<?= $post["image"] ?>" alt="" width="150" height="150" name="image" class="foto-usuario">
                 </a>
             </div>
             <?php endforeach; ?>
