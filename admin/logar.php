@@ -20,7 +20,7 @@ if (empty($dados['email'])) {
    $stmt->execute();
    if ($stmt->rowCount() == 1) {
       $info = $stmt->fetch();
-      $retorna = ['status' => true, 'id' => $_SESSION['id']];
+      $retorna = ['status' => true, 'id' => $info['id']];
       $_SESSION['logado'] = true;
       $_SESSION['id'] = $info['id'];
       $_SESSION['nome'] = $info['nome'];
