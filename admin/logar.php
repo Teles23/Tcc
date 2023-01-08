@@ -25,6 +25,7 @@ if (empty($dados['email'])) {
       $_SESSION['id'] = $info['id'];
       $_SESSION['nome'] = $info['nome'];
       $_SESSION['senha'] = $info['senha'];
+      $_SESSION['perfil'] = $info['perfil'];
    } else {
       $retorna = ['status' => false, 'msg' => "Email/Senha incorretos!"];
    }
