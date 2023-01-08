@@ -30,7 +30,7 @@ $results = $stmt->fetchALL(PDO::FETCH_ASSOC);
                                 src="<?= $post["image"] ?>" alt="" width="40" height="40" class="perfil-nav"></a>
                         <?php endforeach; ?>
                         <ul class="dropdown-menu-dark dropdown-menu">
-                            <li><a class="dropdown-item" href="../pages/perfil.php">Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Perfil</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -50,10 +50,7 @@ $results = $stmt->fetchALL(PDO::FETCH_ASSOC);
                     </li>
                     </li>
                     <li class="nav-item flex-container nav-perfil">
-                        <a class="nav-link position-relative" href="#"><span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99
-                                <span class="visually-hidden">unread messages</span></span><i
-                                class="fa-solid fa-bell"></i></a>
+                        <a class="nav-link position-relative" href="#"></span><i class="fa-solid fa-bell"></i></a>
                     </li>
                 </ul>
             </div>
