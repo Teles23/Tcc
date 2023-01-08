@@ -3,7 +3,7 @@ include_once "../config/connection.php";
 include('../admin/session.php');
 
 $id = $_GET['id'];
-$stmt = $conectar->prepare("SELECT image FROM users where id=:id");
+$stmt = $conectar->prepare("SELECT imagem FROM users where id=:id");
 $stmt->execute(array('id' => $id));
 
 $results = $stmt->fetchALL(PDO::FETCH_ASSOC);
@@ -27,7 +27,7 @@ $results = $stmt->fetchALL(PDO::FETCH_ASSOC);
                         <?php foreach ($results as $post) : ?>
                         <a target="_self" class="nav-link dropdown-toggle navbar-brand" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false" style="text-transform: capitalize;"> <img
-                                src="<?= $post["image"] ?>" alt="" width="40" height="40" class="perfil-nav"></a>
+                                src="<?= $post["imagem"] ?>" alt="" width="40" height="40" class="perfil-nav"></a>
                         <?php endforeach; ?>
                         <ul class="dropdown-menu-dark dropdown-menu">
                             <li><a class="dropdown-item" href="#">Perfil</a></li>
@@ -50,7 +50,7 @@ $results = $stmt->fetchALL(PDO::FETCH_ASSOC);
                     </li>
                     </li>
                     <li class="nav-item flex-container nav-perfil">
-                        <a class="nav-link position-relative" href="#"></span><i class="fa-solid fa-bell"></i></a>
+                        <a class="nav-link position-relative" href="#"><i class="fa-solid fa-bell"></i></a>
                     </li>
                 </ul>
             </div>

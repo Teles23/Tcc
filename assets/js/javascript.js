@@ -94,8 +94,6 @@ if (logUsuario) {
     });
 
     const resposta = await dados.json();
-    const resposta1 = dados;
-    const id = dados;
 
     if (resposta['status'] == false) {
       Swal.fire({
@@ -105,7 +103,7 @@ if (logUsuario) {
         confirmButtonColor: '#3085d6',
         confirmButtonText: 'Fechar'
       });
-    } else if (resposta1['status']) {
+    } else if (resposta['status']) {
       window.location.href = "../pages/perfil.php?id=" + resposta['id'];
     }
   });
