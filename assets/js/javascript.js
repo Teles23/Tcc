@@ -104,7 +104,7 @@ if (logUsuario) {
         confirmButtonText: 'Fechar'
       });
     } else if (resposta['status']) {
-      window.location.href = "../pages/perfil.php?id=" + resposta['id'];
+      window.location.href = "../pages/index-musico.php?id=" + resposta['id'];
     }
   });
 

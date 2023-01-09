@@ -1,9 +1,9 @@
 <?php
-include_once ("../pages/header.php");
+include_once("../pages/header.php");
 
 
 ?>
-<title>Login</title>
+<title>Login | Epalco</title>
 </head>
 
 <body>
@@ -19,13 +19,13 @@ include_once ("../pages/header.php");
                 <h3 class="h3">Entrar</h3>
                 <div class="mb-3 form-floating">
                     <input type="email" class="form-control" name="email" placeholder="Email">
-                    <label for="formGroupExampleInput" class="form-label">Email</label>
+                    <label for="formGroupExampleInput" class="form-label label">Email</label>
                 </div>
                 <div class="mb-1 form-floating">
                     <input type="password" class="form-control mb-5" name="senha" id="senha" placeholder="Senha"
                         minlength="6">
 
-                    <label for="formGroupExampleInput2" class="form-label">Senha</label>
+                    <label for="formGroupExampleInput2" class="form-label label">Senha</label>
                 </div>
                 <p style="position: relative ; top: -20px;"><input type="button" class="btn btn-outline-secondary"
                         id="mostrar" value="Mostrar Senha" onclick="mostrarsenha()"></p>

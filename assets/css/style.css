@@ -9,6 +9,7 @@ html {
 body {
 	background-color: black;
 	height: 100vh;
+	color: #fff;
 }
 section {
 	border-bottom: 8px solid rgb(20, 20, 20);
@@ -19,6 +20,133 @@ section {
 input[type="email"]:not(:placeholder-shown):invalid {
 	color: red;
 	outline-color: red;
+}
+li-icon {
+	margin: 0 4px 0 -2px;
+}
+.user {
+	margin-top: 0.8rem;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.conteudo-usuario {
+	background-color: rgb(146 53 116 / 37%);
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 0.7rem;
+}
+.label {
+	color: black;
+}
+#btn-text {
+	margin-left: 0.8rem;
+}
+.index {
+	margin: 0 0 0.8rem;
+	background: rgb(146 53 116 / 37%);
+	border-radius: 0.8rem;
+	display: flex;
+	flex-direction: column;
+}
+.btn-input {
+	align-items: center;
+	border: none;
+	font-weight: 600;
+	display: inline-flex;
+	justify-content: center;
+	min-width: 6.4rem;
+	max-width: 480px;
+	background-color: hsla(0, 0%, 100%, 0);
+	color: rgba(0, 0, 0, 0.6);
+}
+.inputs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: none;
+	margin-bottom: 0.8rem;
+	flex-wrap: nowrap;
+}
+#buton-publi {
+	margin: 0.4rem 0;
+	flex-grow: 1;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 35px !important;
+	padding: 1rem 2rem;
+	max-height: 3rem;
+	line-height: 1.5;
+	align-items: center;
+	cursor: pointer;
+	font-weight: 600;
+	display: inline-flex;
+	color: rgba(0, 0, 0, 0.6);
+}
+.publi {
+	display: flex;
+	align-items: center;
+	margin: 8px 16px 0 16px;
+}
+.feed-index {
+	display: flex;
+	border-radius: 0.8rem;
+	margin-bottom: 0.8rem;
+	flex-direction: column;
+}
+.chat {
+	display: grid;
+	height: 100vh;
+	place-content: center;
+	align-items: center;
+	grid-template-columns: auto auto auto;
+	justify-content: space-between;
+	gap: 20px;
+}
+.botao1 {
+	width: 200px;
+	border-radius: 5px;
+	background-color: green;
+	font-size: 18px;
+	padding: 15px 20px;
+	color: antiquewhite;
+}
+#perfilDoUsuario h1 {
+	text-align: center;
+}
+#perfilDoUsuario {
+	text-align: justify;
+}
+.info {
+	display: grid;
+	grid-auto-flow: column;
+	place-items: start;
+	gap: 52px;
+}
+.botoes-destaques {
+	display: grid;
+	height: 100%;
+	align-items: end;
+}
+.telas-destaques {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
+.telas {
+	background-color: rgb(146 53 116 / 37%);
+	width: 190px;
+	height: 120px;
+	border-radius: 10px;
+}
+.botoes {
+	width: 200px;
+	border-radius: 5px;
+	height: 45px;
+	background-color: rgb(146 53 116 / 37%);
+	font-size: 18px;
+	text-align: center;
+	color: antiquewhite;
 }
 .modal-content {
 	color: #222;
@@ -98,9 +226,7 @@ input[type="email"]:not(:placeholder-shown):invalid {
 	padding-left: 1.6rem !important;
 }
 .foto-usuario {
-	border: 1px none;
 	border-radius: 50%;
-	padding: 10px;
 }
 .perfil-content {
 	display: grid;
@@ -109,12 +235,13 @@ input[type="email"]:not(:placeholder-shown):invalid {
 	align-items: center;
 	grid-template-columns: auto auto;
 	justify-content: space-between;
+	gap: 20px;
 }
 .perfil-identificacao {
 	flex-direction: column;
-	background-color: #c0c0c0;
+	background-color: #141414;
 	width: 225px;
-	height: 572px;
+	height: 100%;
 	border: 0;
 	border-radius: 8px;
 	align-content: center;
@@ -123,8 +250,8 @@ input[type="email"]:not(:placeholder-shown):invalid {
 }
 .destaques {
 	width: 800px;
-	height: auto;
-	background-color: #c0c0c0;
+	height: 576px;
+	background-color: #141414;
 	padding: 10px 25px;
 	border: 0;
 	border-radius: 8px;
@@ -195,9 +322,7 @@ input[type="email"]:not(:placeholder-shown):invalid {
 		font-weight: 400;
 	}
 	.foto-usuario {
-		border: 1px solid;
 		border-radius: 50%;
-		padding: 10px;
 	}
 	.perfil-content {
 		display: grid;
@@ -209,7 +334,7 @@ input[type="email"]:not(:placeholder-shown):invalid {
 		place-content: start;
 	}
 	.perfil-identificacao {
-		background-color: #c0c0c0;
+		background-color: #141414;
 		width: auto;
 		height: auto;
 		border: 0;
@@ -219,12 +344,27 @@ input[type="email"]:not(:placeholder-shown):invalid {
 	.destaques {
 		width: auto;
 		height: auto;
-		background-color: #c0c0c0;
+		background-color: #141414;
 		padding: 10px 25px;
 		border: 0;
 		border-radius: 8px;
 	}
 	.navbar-nav .dropdown-menu {
 		position: absolute;
+	}
+	.chat {
+		display: grid;
+		height: 100vh;
+		align-items: center;
+		row-gap: 34px;
+		margin-top: 84px;
+		grid-template-columns: auto;
+		place-content: start;
+	}
+	.telas {
+		width: 100%;
+	}
+	.info {
+		grid-auto-flow: row;
 	}
 }

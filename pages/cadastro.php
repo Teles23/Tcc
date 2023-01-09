@@ -1,7 +1,7 @@
 <?php
 include_once "../pages/header.php";
 ?>
-<title>Cadastro</title>
+<title>Cadastro | Epalco</title>
 </head>
 
 <body>
@@ -20,36 +20,36 @@ include_once "../pages/header.php";
             <form action="../admin/cad_userOk.php" method="POST" id="form_cadastro">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="perfil" id="inlineRadio1" value="Músico" checked>
-                    <label class="form-check-label" for="inlineRadio1">Músico</label>
+                    <label class="form-check-label label" for="inlineRadio1">Músico</label>
                 </div>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="perfil" id="inlineRadio2" value="Contratante">
-                    <label class="form-check-label" for="inlineRadio2">Contratante</label>
+                    <label class="form-check-label label" for="inlineRadio2">Contratante</label>
                 </div>
                 <div class="mb-3">
-                    <label for="validationDefaultUsername" class="form-label">Image</label>
+                    <label for="validationDefaultUsername" class="form-label label">Image</label>
                     <input type="file" class="form-control" id="validationDefault02" name="image" required
                         placeholder="envie uma imagem">
                 </div>
                 <div class=" form-floating mb-3 col">
                     <input type="text" class="form-control" placeholder="Nome" name="nome" id="nome">
-                    <label for="exampleInputEmail">Nome</label>
+                    <label for="exampleInputEmail " class="label">Nome</label>
                 </div>
                 <div class="form-group form-floating mb-3">
                     <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"
                         placeholder="Seu email">
-                    <label for="exampleInputEmail1">Endereço de email</label>
+                    <label for="exampleInputEmail1" class="label">Endereço de email</label>
                 </div>
                 <div class="row">
                     <div class="form-group col form-floating ">
                         <input name="senha" type="password" class="form-control" id="senha" placeholder="Senha"
                             minlength="6">
-                        <label for="exampleInputPassword1" class="password">Senha</label>
+                        <label for="exampleInputPassword1" class="password label">Senha</label>
                     </div>
                     <div class="form-group col form-floating ">
                         <input name="confirme_senha" type="password" class="form-control" id="confirme_senha"
                             placeholder="Confirme sua senha" minlength="6">
-                        <label for="exampleInputPassword2" class="password">Confirme sua senha</label>
+                        <label for="exampleInputPassword2" class="password label">Confirme sua senha</label>
                     </div>
                     <div id="passwordHelpBlock" class="form-text mb-3">
                         Mínimo de 6 caracteres com letras e números.
