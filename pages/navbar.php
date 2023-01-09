@@ -25,17 +25,20 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Artistas</a>
+                            <a class="nav-link" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Categorias
+                            <a class="nav-link " href="#negocios" role="button" aria-expanded="false">
+                                Negócios
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#publico">Público</a>
+                        </li>
+                        <!-- <ul class="dropdown-menu dropdown-menu-dark">
                                 <li><a class="dropdown-item" href="#">Bateristas</a></li>
                                 <li><a class="dropdown-item" href="#">Cantores</a></li>
                                 <li>
@@ -43,7 +46,7 @@
                                 </li>
                                 <li><a class="dropdown-item" href="#">Algo a mais!</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>

@@ -9,8 +9,8 @@ include_once "./pages/header.php";
         <?php
         include_once "./pages/navbar.php";
         ?>
-        <section style="padding:0 0 30px;">
-            <div id="carouselExample " class="carousel carousel slide " data-bs-ride="carousel">
+        <section style="padding:0 0 30px;" id="index">
+            <div id="carouselExample" class="carousel carousel slide " data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" id="slide-1" data-bs-interval="15000">
                         <img src="./assets/img/slide-home/fundo-01.png" class="w-100 d-block" alt="">
@@ -24,7 +24,7 @@ include_once "./pages/header.php";
                 </div>
             </div>
         </section>
-        <section>
+        <section id="sobre">
             <div class="content flex-container">
                 <div class="text">
                     <h1>Este é o seu espaço!</h1>
@@ -41,7 +41,7 @@ include_once "./pages/header.php";
                         <div class="modal-dialog modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Músicos habilidosos,<br>sejam
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel ">Músicos habilidosos,<br>sejam
                                         muito bem-vindos ao e-Palco!</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
@@ -78,7 +78,7 @@ include_once "./pages/header.php";
                 </div>
             </div>
         </section>
-        <section>
+        <section id="negocios">
             <div class="content flex-container reverse">
                 <div class="text">
                     <h1>Fazemos o ritmo que<br>agita o seu negócio!</h1>
@@ -131,7 +131,7 @@ include_once "./pages/header.php";
                 </div>
             </div>
         </section>
-        <section>
+        <section id="publico">
             <div class="content flex-container">
                 <div class="text">
                     <h1>De mãos dadas com todos!</h1>

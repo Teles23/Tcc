@@ -61,6 +61,11 @@ li-icon {
 	background-color: hsla(0, 0%, 100%, 0);
 	color: rgba(0, 0, 0, 0.6);
 }
+.btn-input:hover {
+	/* background-blend-mode: multiply; */
+	background: rgba(0, 0, 0, 0.4);
+	background-blend-mode: color-burn;
+}
 .inputs {
 	display: flex;
 	flex-wrap: wrap;
