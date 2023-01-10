@@ -23,23 +23,6 @@ $results = $stmt->fetchALL(PDO::FETCH_ASSOC);
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav nav-mobile">
-                    <li class="nav-item dropdown flex-container nav-perfil">
-                        <?php foreach ($results as $post) : ?>
-                        <a target="_self" class="nav-link dropdown-toggle navbar-brand" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" style="text-transform: capitalize;"> <img
-                                src="<?= $post["image"] ?>" alt="" width="40" height="40" class="perfil-nav"></a>
-                        <?php endforeach; ?>
-                        <ul class="dropdown-menu-dark dropdown-menu">
-                            <li><a class="dropdown-item" href="../pages/perfil-musico.php?id=<?= $id ?>">Perfil</a></li>
-                            <li>
-                            <li><a class="dropdown-item" href="../pages/editar-musico.php?id=<?= $id ?>">Editar</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="?sair">Sair</a>
-                            </li>
-                        </ul>
-                    </li>
                     <li class="nav-item flex-container nav-perfil">
                         <a class="nav-link active" aria-current="page" href="../pages/index-musico.php?id=<?= $id ?>"><i
                                 class="fa-solid fa-house-chimney"></i></a>
@@ -50,15 +33,29 @@ $results = $stmt->fetchALL(PDO::FETCH_ASSOC);
                                 class="position-absolute translate-middle bg-primary border border-light rounded-circle"
                                 style="padding: 0.3rem;"></span>
                         </a>
-
                     </li>
                     <li class="nav-item flex-container nav-perfil">
                         <a class="nav-link" href="../pages/contrato.php?id=<?= $id ?>"><i
                                 class="fa-solid fa-message"></i></a>
                     </li>
-                    </li>
                     <li class="nav-item flex-container nav-perfil">
                         <a class="nav-link position-relative" href="#"><i class="fa-solid fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item dropdown flex-container nav-perfil">
+                        <?php foreach ($results as $post) : ?>
+                        <a target="_self" class="nav-link navbar-brand" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="text-transform: capitalize;"> <img src="<?= $post["image"] ?>"
+                                alt="" width="40" height="40" class="perfil-nav"></a>
+                        <?php endforeach; ?>
+                        <ul class="dropdown-menu-dark dropdown-menu">
+                            <li><a class="dropdown-item" href="../pages/perfil-musico.php?id=<?= $id ?>">Perfil</a></li>
+                            <li><a class="dropdown-item" href="../pages/editar-musico.php?id=<?= $id ?>">Editar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="?sair">Sair</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>

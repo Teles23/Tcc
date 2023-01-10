@@ -10,10 +10,10 @@
             <a href="../index.php" target="_self"> <img src="../assets/img/nome.png" alt="" width="80px"
                     height="40px"></a>
             <form class="justify-content-start">
-                <a href="../pages/login.php" target="_self"> <button class="btn btn-sm btn-outline-secondary"
+                <a href="../pages/login.php" target="_self"> <button class="btn btn-sm btn-secondary"
                         type="button">Login</button></a>
                 <a href="../pages/cadastro.php" target="_self" rel="noopener noreferrer"><button
-                        class="btn btn-sm btn-outline-secondary" type="button">Cadastre-se</button></a>
+                        class="btn btn-sm btn-secondary" type="button">Cadastre-se</button></a>
             </form>
             <div class="offcanvas offcanvas-start  text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">

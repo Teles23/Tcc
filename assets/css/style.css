@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
-html {
+html,
+* {
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
@@ -9,7 +10,7 @@ html {
 body {
 	background-color: black;
 	height: 100vh;
-	color: #fff;
+	/* color: #fff; */
 }
 section {
 	border-bottom: 8px solid rgb(20, 20, 20);
@@ -25,17 +26,23 @@ li-icon {
 	margin: 0 4px 0 -2px;
 }
 .user {
-	margin-top: 0.8rem;
+	position: relative;
+	bottom: -138px;
+	width: 225px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
+.conteudo-usuario:hover {
+	background: rgba(0, 0, 0, 0.4);
+}
 .conteudo-usuario {
-	background-color: rgb(146 53 116 / 37%);
+	background-color: #fff;
 	border-top: 1px solid rgba(0, 0, 0, 0.2);
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	text-align: center;
+	text-align: left;
 	padding: 0.7rem;
+	color: rgba(0, 0, 0, 0.6);
 }
 .label {
 	color: black;
@@ -43,12 +50,16 @@ li-icon {
 #btn-text {
 	margin-left: 0.8rem;
 }
+.nav-link {
+	color: #fff;
+}
 .index {
 	margin: 0 0 0.8rem;
-	background: rgb(146 53 116 / 37%);
+	background: #fff;
 	border-radius: 0.8rem;
 	display: flex;
 	flex-direction: column;
+	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .btn-input {
 	align-items: center;
@@ -60,11 +71,10 @@ li-icon {
 	max-width: 480px;
 	background-color: hsla(0, 0%, 100%, 0);
 	color: rgba(0, 0, 0, 0.6);
+	border-radius: 0.8rem;
 }
 .btn-input:hover {
-	/* background-blend-mode: multiply; */
 	background: rgba(0, 0, 0, 0.4);
-	background-blend-mode: color-burn;
 }
 .inputs {
 	display: flex;
@@ -78,7 +88,7 @@ li-icon {
 	margin: 0.4rem 0;
 	flex-grow: 1;
 	border: 1px solid rgba(0, 0, 0, 0.3);
-	border-radius: 35px !important;
+	border-radius: 0.8rem !important;
 	padding: 1rem 2rem;
 	max-height: 3rem;
 	line-height: 1.5;
@@ -110,7 +120,7 @@ li-icon {
 }
 .botao1 {
 	width: 200px;
-	border-radius: 5px;
+	border-radius: 0.8rem;
 	background-color: green;
 	font-size: 18px;
 	padding: 15px 20px;
@@ -139,16 +149,17 @@ li-icon {
 	gap: 10px;
 }
 .telas {
-	background-color: rgb(146 53 116 / 37%);
+	background-color: #fff;
 	width: 190px;
 	height: 120px;
-	border-radius: 10px;
+	border-radius: 0.8rem;
+	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .botoes {
 	width: 200px;
-	border-radius: 5px;
+	border-radius: 0.8rem;
 	height: 45px;
-	background-color: rgb(146 53 116 / 37%);
+	background-color: #fff;
 	font-size: 18px;
 	text-align: center;
 	color: antiquewhite;
@@ -244,19 +255,19 @@ li-icon {
 }
 .perfil-identificacao {
 	flex-direction: column;
-	background-color: #141414;
+	background-color: #f3f2ef;
 	width: 225px;
 	height: 100%;
 	border: 0;
 	border-radius: 8px;
 	align-content: center;
-	padding: 10px 25px;
+	padding-top: 10px;
 	flex-wrap: wrap;
 }
 .destaques {
 	width: 800px;
 	height: 576px;
-	background-color: #141414;
+	background-color: #f3f2ef;
 	padding: 10px 25px;
 	border: 0;
 	border-radius: 8px;
@@ -270,6 +281,13 @@ li-icon {
 }
 .navbar-brand {
 	margin-right: 0;
+}
+.nome-usuario1 {
+	text-transform: capitalize;
+	font-size: 1.6rem;
+	color: black;
+	font-weight: 600;
+	margin-top: 25px;
 }
 #logo {
 	width: 80px;
@@ -339,20 +357,20 @@ li-icon {
 		place-content: start;
 	}
 	.perfil-identificacao {
-		background-color: #141414;
+		background-color: #f3f2ef;
 		width: auto;
 		height: auto;
 		border: 0;
-		border-radius: 8px;
+		border-radius: 0.8rem;
 		padding: 10px 25px;
 	}
 	.destaques {
 		width: auto;
 		height: auto;
-		background-color: #141414;
+		background-color: #f3f2ef;
 		padding: 10px 25px;
 		border: 0;
-		border-radius: 8px;
+		border-radius: 0.8rem;
 	}
 	.navbar-nav .dropdown-menu {
 		position: absolute;
@@ -371,5 +389,9 @@ li-icon {
 	}
 	.info {
 		grid-auto-flow: row;
+	}
+	.user,
+	.nome-usuario {
+		display: none;
 	}
 }
