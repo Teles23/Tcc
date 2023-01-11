@@ -122,6 +122,10 @@ include_once "./pages/header.php";
                                         o som do seu evento?</p>
 
                                 </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar
+                                        janela</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -175,12 +179,16 @@ include_once "./pages/header.php";
                                         o som do seu evento?</p>
 
                                 </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar
+                                        janela</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card-img">
-                    <img src="./assets/img/cantor1.jpg" alt="">
+                    <img src="./assets/img/cont3.png" alt="">
                 </div>
             </div>
         </section>
