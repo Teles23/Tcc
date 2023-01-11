@@ -7,7 +7,7 @@
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="../index.php" target="_self"> <img src="../assets/img/nome.png" alt="" width="80px"
+            <a href="../index.php" target="_self"> <img src="../assets/img/teste.png" alt="" width="80px"
                     height="40px"></a>
             <form class="justify-content-start">
                 <a href="../pages/login.php" target="_self"> <button class="btn btn-sm btn-secondary"

@@ -18,6 +18,9 @@ section {
 	margin-bottom: 0;
 	color: #fff;
 }
+p {
+	margin: 0;
+}
 input[type="email"]:not(:placeholder-shown):invalid {
 	color: red;
 	outline-color: red;
@@ -25,17 +28,21 @@ input[type="email"]:not(:placeholder-shown):invalid {
 li-icon {
 	margin: 0 4px 0 -2px;
 }
+hr {
+	margin: auto;
+}
 .user {
 	position: relative;
-	bottom: -138px;
+	bottom: -35px;
 	width: 225px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .conteudo-usuario:hover {
 	background: rgba(0, 0, 0, 0.4);
+	cursor: pointer;
 }
 .conteudo-usuario {
-	background-color: #fff;
+	background-color: hsla(0, 0%, 100%, 0);
 	border-top: 1px solid rgba(0, 0, 0, 0.2);
 	width: 100%;
 	display: flex;
@@ -43,6 +50,7 @@ li-icon {
 	text-align: left;
 	padding: 0.7rem;
 	color: rgba(0, 0, 0, 0.6);
+	font-size: 13px;
 }
 .label {
 	color: black;
@@ -83,6 +91,13 @@ li-icon {
 	border: none;
 	margin-bottom: 0.8rem;
 	flex-wrap: nowrap;
+}
+.linha {
+	border: none;
+	width: 100%;
+}
+#buton-publi:hover {
+	background-color: rgba(0, 0, 0, 0.4);
 }
 #buton-publi {
 	margin: 0.4rem 0;
@@ -131,6 +146,10 @@ li-icon {
 }
 #perfilDoUsuario {
 	text-align: justify;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 0.8rem;
+	border-radius: 0.8rem;
+	background-color: #fff;
 }
 .info {
 	display: grid;
@@ -149,20 +168,18 @@ li-icon {
 	gap: 10px;
 }
 .telas {
-	background-color: #fff;
-	width: 190px;
-	height: 120px;
-	border-radius: 0.8rem;
-	border: 1px solid rgba(0, 0, 0, 0.2);
+	width: 235px;
+	height: 133px;
 }
 .botoes {
 	width: 200px;
 	border-radius: 0.8rem;
-	height: 45px;
-	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	height: 48px;
 	font-size: 18px;
 	text-align: center;
 	color: antiquewhite;
+	background: url(../img/grav.png) round;
 }
 .modal-content {
 	color: #222;
@@ -265,12 +282,13 @@ li-icon {
 	flex-wrap: wrap;
 }
 .destaques {
-	width: 800px;
+	width: 614px;
 	height: 576px;
 	background-color: #f3f2ef;
 	padding: 10px 25px;
 	border: 0;
 	border-radius: 8px;
+	overflow: auto;
 }
 .container {
 	max-width: 1128px;
@@ -282,12 +300,23 @@ li-icon {
 .navbar-brand {
 	margin-right: 0;
 }
+.nome-usuario {
+	width: 100%;
+}
 .nome-usuario1 {
 	text-transform: capitalize;
 	font-size: 1.6rem;
 	color: black;
 	font-weight: 600;
 	margin-top: 25px;
+	text-align: center;
+}
+.destaques-contrato {
+	padding: 1.2rem;
+	overflow: auto;
+	background-color: #fff;
+	border-radius: 0.8rem;
+	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 #logo {
 	width: 80px;
@@ -366,7 +395,7 @@ li-icon {
 	}
 	.destaques {
 		width: auto;
-		height: auto;
+		/* height: auto; */
 		background-color: #f3f2ef;
 		padding: 10px 25px;
 		border: 0;
@@ -393,5 +422,10 @@ li-icon {
 	.user,
 	.nome-usuario {
 		display: none;
+	}
+	.botoes-destaques {
+		grid-template-columns: 2fr 2fr;
+		column-gap: 3%;
+		row-gap: 8%;
 	}
 }

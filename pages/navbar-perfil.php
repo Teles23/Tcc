@@ -14,7 +14,7 @@ $results = $stmt->fetchALL(PDO::FETCH_ASSOC);
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #303030;">
         <div class="container-fluid container">
             <a class="navbar-brand" href="#"><img src="../assets/img/logo.png" alt="" width="30" height="30"></a>
-            <a href="../index.php" target="_self"> <img src="../assets/img/nome.png" alt="" width="80px"
+            <a href="../index.php" target="_self"> <img src="../assets/img/teste.png" alt="" width="80px"
                     height="40px"></a>
             <button class="navbar-toggler  dropdown-toggle dropdown-toggle-split" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"

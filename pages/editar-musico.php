@@ -14,7 +14,7 @@ include_once "../pages/header.php";
     ?>
 
     <main>
-        <div class="destaques">
+        <div class="destaques" style="width: auto;">
             <fieldset>
                 <legend> Informações pessoais</legend>
                 <form action="" method="post">

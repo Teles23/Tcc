@@ -23,7 +23,7 @@ include_once "../pages/header.php";
             </div>
         </div>
         <main>
-            <div class="destaques">
+            <div class="destaques" style="width: auto;">
                 <fieldset>
                     <legend> Informações Profissionais</legend>
                     <form action="" method="post">

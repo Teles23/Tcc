@@ -22,7 +22,8 @@ include_once "../pages/header.php";
                 <div class="nome-usuario1">
                     <?php echo $_SESSION['nome']; ?>
                 </div>
-                <div style="color:rgba(0,0,0,0.6); font-size:1rem; font-weight:400">
+                <div
+                    style="color:rgba(0,0,0,0.6); font-size:1rem; font-weight:400; text-align:left; margin-left: 1.8rem;">
                     <?php echo $_SESSION['perfil']; ?>
                 </div>
             </div>
@@ -30,13 +31,27 @@ include_once "../pages/header.php";
 
             <div class="user">
                 <div class="conteudo-usuario" style="border-top: none;">
+                    <strong>
+                        <p>Agenda</p>
+                    </strong>
+                </div>
+                <div class="conteudo-usuario" style="border-top: none;">
+                    <p>Seguidores</p>
+                </div>
+                <div class="conteudo-usuario" style="border-top: none;">
                     <p>Instrumentos mais tocados</p>
                 </div>
                 <div class="conteudo-usuario">
                     <p>Itens salvos</p>
                 </div>
-                <div class="conteudo-usuario" style="border-radius:0 0 0.8rem 0.8rem;">
+                <div class="conteudo-usuario" style="border-top: none;">
+                    <p>Grupos</p>
+                </div>
+                <div class="conteudo-usuario">
                     <p>Meus contatos</p>
+                </div>
+                <div class="conteudo-usuario" style="border-radius:0 0 0.8rem 0.8rem;">
+                    <p>Configurações</p>
                 </div>
             </div>
         </div>
@@ -46,15 +61,10 @@ include_once "../pages/header.php";
                 <div class="index">
                     <div class="feed-index">
                         <div class="publi">
-                            <a href="../pages/index-musico.php?id=<?= $id ?>">
-                                <div style="margin-right: 0.8rem;line-height: 0;">
-                                    <img src="<?= $post["image"] ?>" alt="" width="48" height="48" name="image"
-                                        class="foto-usuario">
-                                </div>
-                            </a>
                             <button id="buton-publi">
                                 <span>Começar Publicação</span>
                             </button>
+
                         </div>
 
                     </div>
@@ -77,18 +87,24 @@ include_once "../pages/header.php";
                         <button class="btn-input">
                             <li-icon><i class="fa-solid fa-newspaper"></i></li-icon>
                             <span id="btn-text">Escrever Artigo</span>
-
                         </button>
-
                     </div>
                 </div>
+                <div>
+                    <button class="linha">
+                        <hr>
+                    </button>
+                </div>
+
             </div>
 
         </main>
 
 
-        <div class="perfil-identificacao flex-container" style="justify-content: end;">
-
+        <div class="perfil-identificacao flex-container">
+            <iframe
+                src="https://calendar.google.com/calendar/embed?height=250&wkst=1&bgcolor=%23AD1457&ctz=America%2FSao_Paulo&showNav=1&showTitle=0&showPrint=0&showTabs=0&showCalendars=1&showTz=0&src=cHQuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb202ODRiNmM3Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043&color=%230B8043&color=%23202124"
+                style="border-width:0" width="210" height="225" frameborder="0" scrolling="no"></iframe>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
